@@ -1,0 +1,3493 @@
+{
+	"info": {
+		"_postman_id": "7c84b791-be60-4f41-8b6c-2e1b5dab3130",
+		"name": "Os Velosos - Trello API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27866207",
+		"_collection_link": "https://os-velosos.postman.co/workspace/Os-velosos~e362979c-c7c5-46cd-8f04-f7cf8b3d7622/collection/27866207-7c84b791-be60-4f41-8b6c-2e1b5dab3130?action=share&source=collection_link&creator=27866207"
+	},
+	"item": [
+		{
+			"name": "Boards",
+			"item": [
+				{
+					"name": "Create a Board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is within acceptable range\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(500);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Presence of required fields\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData.id).to.exist;\r",
+									"    pm.expect(responseData.name).to.exist;\r",
+									"    pm.expect(responseData.desc).to.exist;\r",
+									"    pm.expect(responseData.closed).to.exist;\r",
+									"    pm.expect(responseData.idOrganization).to.exist;\r",
+									"    pm.expect(responseData.url).to.exist;\r",
+									"    pm.expect(responseData.prefs).to.exist;\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Prefs object contains expected properties\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"\r",
+									"    pm.expect(responseData.prefs).to.be.an('object');\r",
+									"    pm.expect(responseData.prefs).to.include.all.keys(\r",
+									"        \"permissionLevel\",\r",
+									"        \"hideVotes\",\r",
+									"        \"voting\",\r",
+									"        \"comments\",\r",
+									"        \"invitations\",\r",
+									"        \"selfJoin\",\r",
+									"        \"cardCovers\",\r",
+									"        \"cardCounts\",\r",
+									"        \"isTemplate\",\r",
+									"        \"cardAging\",\r",
+									"        \"calendarFeedEnabled\",\r",
+									"        \"hiddenPluginBoardButtons\",\r",
+									"        \"switcherViews\"\r",
+									"    );\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Validate the URL format in the response\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.have.property('url').that.is.a('string').and.matches(/^https?:\\/\\/.+/);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"current_timestamp\", new Date().toISOString());\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "javascript"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.trello.com/1/boards/?name=EQS3 Board Test&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "EQS3 Board Test"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						},
+						"description": "\nThis endpoint makes an HTTP POST request to create a new board on Trello. The request includes parameters for the name of the board, the API key, and the user token for authentication.\n\n### Response\nThe response is in JSON format and contains the schema for the newly created board. It includes various properties such as the board ID, name, description, URL, preferences, label names, and limits. The response provides detailed information about the newly created board, its preferences, and label names.\n\n```json\n{\n  \"id\": \"\",\n  \"name\": \"\",\n  \"desc\": \"\",\n  \"descData\": null,\n  \"closed\": true,\n  \"idOrganization\": \"\",\n  \"idEnterprise\": null,\n  \"pinned\": true,\n  \"url\": \"\",\n  \"shortUrl\": \"\",\n  \"prefs\": {\n    \"permissionLevel\": \"\",\n    \"hideVotes\": true,\n    \"voting\": \"\",\n    \"comments\": \"\",\n    \"invitations\": \"\",\n    \"selfJoin\": true,\n    \"cardCovers\": true,\n    \"cardCounts\": true,\n    \"isTemplate\": true,\n    \"cardAging\": \"\",\n    \"calendarFeedEnabled\": true,\n    \"hiddenPluginBoardButtons\": [],\n    \"switcherViews\": [\n      {\n        \"viewType\": \"\",\n        \"enabled\": true\n      }\n    ],\n    \"background\": \"\",\n    \"backgroundColor\": \"\",\n    \"backgroundImage\": null,\n    \"backgroundTile\": true,\n    \"backgroundBrightness\": \"\",\n    \"sharedSourceUrl\": null,\n    \"backgroundImageScaled\": null,\n    \"backgroundBottomColor\": \"\",\n    \"backgroundTopColor\": \"\",\n    \"canBePublic\": true,\n    \"canBeEnterprise\": true,\n    \"canBeOrg\": true,\n    \"canBePrivate\": true,\n    \"canInvite\": true\n  },\n  \"labelNames\": {\n    \"green\": \"\",\n    \"yellow\": \"\",\n    \"orange\": \"\",\n    \"red\": \"\",\n    \"purple\": \"\",\n    \"blue\": \"\",\n    \"sky\": \"\",\n    \"lime\": \"\",\n    \"pink\": \"\",\n    \"black\": \"\",\n    \"green_dark\": \"\",\n    \"yellow_dark\": \"\",\n    \"orange_dark\": \"\",\n    \"red_dark\": \"\",\n    \"purple_dark\": \"\",\n    \"blue_dark\": \"\",\n    \"sky_dark\": \"\",\n    \"lime_dark\": \"\",\n    \"pink_dark\": \"\",\n    \"black_dark\": \"\",\n    \"green_light\": \"\",\n    \"yellow_light\": \"\",\n    \"orange_light\": \"\",\n    \"red_light\": \"\",\n    \"purple_light\": \"\",\n    \"blue_light\": \"\",\n    \"sky_light\": \"\",\n    \"lime_light\": \"\",\n    \"pink_light\": \"\",\n    \"black_light\": \"\"\n  },\n  \"limits\": {}\n}\n```\n"
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Board",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"boardId\", \"668fc3d8649e248a2c596f92\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"  pm.expect(pm.response.code).to.equal(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 400ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(400);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Presence of required fields\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"\r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData).to.have.property('id');\r",
+									"    pm.expect(responseData).to.have.property('name');\r",
+									"    pm.expect(responseData).to.have.property('desc');\r",
+									"    pm.expect(responseData).to.have.property('closed');\r",
+									"    pm.expect(responseData).to.have.property('idOrganization');\r",
+									"    pm.expect(responseData).to.have.property('pinned');\r",
+									"    pm.expect(responseData).to.have.property('url');\r",
+									"    pm.expect(responseData).to.have.property('shortUrl');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Validate the structure of prefs and labelNames objects\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"\r",
+									"    pm.expect(responseData.prefs).to.be.an('object');\r",
+									"    pm.expect(responseData.prefs).to.have.property('permissionLevel');\r",
+									"    pm.expect(responseData.prefs).to.have.property('hideVotes');\r",
+									"    pm.expect(responseData.prefs).to.have.property('voting');\r",
+									"    pm.expect(responseData.prefs).to.have.property('comments');\r",
+									"    pm.expect(responseData.prefs).to.have.property('invitations');\r",
+									"    pm.expect(responseData.prefs).to.have.property('selfJoin');\r",
+									"    pm.expect(responseData.prefs).to.have.property('cardCovers');\r",
+									"    pm.expect(responseData.prefs).to.have.property('cardCounts');\r",
+									"    pm.expect(responseData.prefs).to.have.property('isTemplate');\r",
+									"    pm.expect(responseData.prefs).to.have.property('cardAging');\r",
+									"    pm.expect(responseData.prefs).to.have.property('calendarFeedEnabled');\r",
+									"    pm.expect(responseData.prefs).to.have.property('hiddenPluginBoardButtons');\r",
+									"    pm.expect(responseData.prefs).to.have.property('switcherViews');\r",
+									"    pm.expect(responseData.prefs).to.have.property('background');\r",
+									"    pm.expect(responseData.prefs).to.have.property('backgroundColor');\r",
+									"    pm.expect(responseData.prefs).to.have.property('backgroundImage');\r",
+									"    pm.expect(responseData.prefs).to.have.property('backgroundTile');\r",
+									"    pm.expect(responseData.prefs).to.have.property('backgroundBrightness');\r",
+									"    pm.expect(responseData.prefs).to.have.property('sharedSourceUrl');\r",
+									"    pm.expect(responseData.prefs).to.have.property('backgroundImageScaled');\r",
+									"    pm.expect(responseData.prefs).to.have.property('backgroundBottomColor');\r",
+									"    pm.expect(responseData.prefs).to.have.property('backgroundTopColor');\r",
+									"    pm.expect(responseData.prefs).to.have.property('canBePublic');\r",
+									"    pm.expect(responseData.prefs).to.have.property('canBeEnterprise');\r",
+									"    pm.expect(responseData.prefs).to.have.property('canBeOrg');\r",
+									"    pm.expect(responseData.prefs).to.have.property('canBePrivate');\r",
+									"    pm.expect(responseData.prefs).to.have.property('canInvite');\r",
+									"\r",
+									"    pm.expect(responseData.labelNames).to.be.an('object');\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{{boardId}}?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardId}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Board",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"updatedName\", \"EQS3 Board Test Updated\");\r",
+									"pm.environment.set(\"updatedDesc\", \"Updated description\");\r",
+									"pm.environment.set(\"updatedClosed\", false);\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 500ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response contains correct updated name\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.name).to.eql(pm.environment.get(\"updatedName\"));\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response contains correct updated description\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.desc).to.eql(pm.environment.get(\"updatedDesc\"));\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response contains correct updated closed status\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.closed).to.eql(pm.environment.get(\"updatedClosed\"));\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"{{updatedName}}\",\r\n    \"desc\": \"{{updatedDesc}}\",\r\n    \"closed\": {{updatedClosed}}\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{{boardId}}?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardId}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Board",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{id}?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{id}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get available gadgets (Power-Ups) on Board",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 500ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response contains correct updated name\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.name).to.eql(pm.environment.get(\"updatedName\"));\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response contains correct updated description\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.desc).to.eql(pm.environment.get(\"updatedDesc\"));\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response contains correct updated closed status\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.closed).to.eql(pm.environment.get(\"updatedClosed\"));\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/{{boardId}}/boardPlugins?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"{{boardId}}",
+								"boardPlugins"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Boards in an Organization",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 300ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Verify the presence of id, nodeId, name, and desc fields\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(board) {\r",
+									"        pm.expect(board).to.have.property('id');\r",
+									"        pm.expect(board).to.have.property('nodeId');\r",
+									"        pm.expect(board).to.have.property('name');\r",
+									"        pm.expect(board).to.have.property('desc');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Content-Type header is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Limits object contains the expected structure and fields\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    \r",
+									"    responseData.forEach(function(board) {\r",
+									"        pm.expect(board.limits).to.exist.and.to.be.an('object');\r",
+									"        pm.expect(board.limits.attachments).to.be.an('object').that.has.all.keys('perBoard', 'perCard');\r",
+									"        pm.expect(board.limits.boards).to.be.an('object').that.has.all.keys('totalMembersPerBoard', 'totalAccessRequestsPerBoard');\r",
+									"        pm.expect(board.limits.cards).to.be.an('object').that.has.all.keys('openPerBoard', 'openPerList', 'totalPerBoard', 'totalPerList');\r",
+									"        pm.expect(board.limits.checklists).to.be.an('object').that.has.all.keys('perBoard', 'perCard');\r",
+									"        pm.expect(board.limits.checkItems).to.be.an('object').that.has.all.keys('perChecklist');\r",
+									"        pm.expect(board.limits.customFields).to.be.an('object').that.has.all.keys('perBoard');\r",
+									"        pm.expect(board.limits.customFieldOptions).to.be.an('object').that.has.all.keys('perField');\r",
+									"        pm.expect(board.limits.labels).to.be.an('object').that.has.all.keys('perBoard');\r",
+									"        pm.expect(board.limits.lists).to.be.an('object').that.has.all.keys('openPerBoard', 'totalPerBoard');\r",
+									"        pm.expect(board.limits.stickers).to.be.an('object').that.has.all.keys('perCard');\r",
+									"        pm.expect(board.limits.reactions).to.be.an('object').that.has.all.keys('perAction', 'uniquePerAction');\r",
+									"    });\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.trello.com/1/organizations/66884673ed9a73eabb9c39fa/boards?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"organizations",
+								"66884673ed9a73eabb9c39fa",
+								"boards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a field on a Board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response time is less than 500ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(500);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Schema is valid\", function () {\r",
+									"  var schema = {\r",
+									"    type: \"object\",\r",
+									"    properties: {\r",
+									"      _value: {\r",
+									"        type: \"string\"\r",
+									"      }\r",
+									"    },\r",
+									"    required: [\"_value\"],\r",
+									"  };\r",
+									"\r",
+									"  var response = pm.response.json();\r",
+									"  pm.expect(tv4.validate(response, schema)).to.be.true;\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/66902c0fbb3f568b905188d2/name?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"66902c0fbb3f568b905188d2",
+								"name"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Actions of a Board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 300\", function () {\r",
+									"  pm.response.to.have.status(300);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response Content-Type header is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Data object should contain 'board' and 'organization' properties\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    responseData.forEach(function(item) {\r",
+									"        pm.expect(item.data).to.be.an('object');\r",
+									"        pm.expect(item.data).to.have.property('board');\r",
+									"        pm.expect(item.data).to.have.property('organization');\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Member creator object has all the required fields\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('array').that.is.not.empty;\r",
+									"    \r",
+									"    responseData.forEach(function(action) {\r",
+									"        pm.expect(action.memberCreator).to.be.an('object').that.includes.all.keys(\r",
+									"            'id', 'activityBlocked', 'avatarHash', 'avatarUrl', 'fullName', 'idMemberReferrer', \r",
+									"            'initials', 'nonPublic', 'nonPublicAvailable', 'username'\r",
+									"        );\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 300ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/boards/66902c0fbb3f568b905188d2/actions?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"boards",
+								"66902c0fbb3f568b905188d2",
+								"actions"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Checklists",
+			"item": [
+				{
+					"name": "Create a Checklist",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.test(\"API Key and Token are defined\", function () {\r",
+									"    pm.expect(pm.variables.get(\"key\")).to.exist;\r",
+									"    pm.expect(pm.variables.get(\"token\")).to.exist;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Setting headers for authorization\", function () {\r",
+									"    pm.request.headers.add({\r",
+									"        key: 'Authorization',\r",
+									"        value: `Bearer ${pm.variables.get(\"token\")}`\r",
+									"    });\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response has the required fields\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData).to.have.property('id');\r",
+									"    pm.expect(responseData).to.have.property('name');\r",
+									"    pm.expect(responseData).to.have.property('idBoard');\r",
+									"    pm.expect(responseData).to.have.property('idCard');\r",
+									"    pm.expect(responseData).to.have.property('pos');\r",
+									"    pm.expect(responseData).to.have.property('checkItems');\r",
+									"    pm.expect(responseData).to.have.property('limits');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Id, name, idBoard, and idCard are non-empty strings\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData.id).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Id should not be empty\");\r",
+									"    pm.expect(responseData.name).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Name should not be empty\");\r",
+									"    pm.expect(responseData.idBoard).to.be.a('string').and.to.have.lengthOf.at.least(1, \"IdBoard should not be empty\");\r",
+									"    pm.expect(responseData.idCard).to.be.a('string').and.to.have.lengthOf.at.least(1, \"IdCard should not be empty\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Pos is a non-negative integer\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData.pos).to.be.a('number').and.to.be.at.least(0, \"Pos should be a non-negative integer\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"CheckItems is an array\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData.checkItems).to.be.an('array', \"CheckItems should be an array\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/checklists?idCard=66909639f8c48fbc818ee7c4&name=ChecklistIsWorking&pos=bottom&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"checklists"
+							],
+							"query": [
+								{
+									"key": "idCard",
+									"value": "66909639f8c48fbc818ee7c4"
+								},
+								{
+									"key": "name",
+									"value": "ChecklistIsWorking"
+								},
+								{
+									"key": "pos",
+									"value": "bottom"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Checklist",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const checklistId = pm.variables.get(\"checklistId\");\r",
+									"\r",
+									"pm.test(\"Checklist ID is defined\", function () {\r",
+									"    pm.expect(checklistId).to.not.be.undefined;\r",
+									"});\r",
+									"\r",
+									"const url = `https://api.trello.com/1/checklists/${checklistId}?key={{key}}&token={{token}}`;\r",
+									"\r",
+									"pm.environment.set(\"url\", url);\r",
+									"\r",
+									"pm.test(\"URL is defined correctly\", function () {\r",
+									"    pm.expect(url).to.not.be.undefined;\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response has the required fields\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData).to.have.property('id');\r",
+									"    pm.expect(responseData).to.have.property('name');\r",
+									"    pm.expect(responseData).to.have.property('idBoard');\r",
+									"    pm.expect(responseData).to.have.property('idCard');\r",
+									"    pm.expect(responseData).to.have.property('pos');\r",
+									"    pm.expect(responseData).to.have.property('checkItems');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Id, idBoard, and idCard should have valid format\", function () {\r",
+									"  const responseData = pm.response.json();\r",
+									"  \r",
+									"  pm.expect(responseData).to.be.an('object');\r",
+									"  responseData.checkItems.forEach(function(checkItem) {\r",
+									"    pm.expect(checkItem.id).to.match(/[a-zA-Z0-9]+/);\r",
+									"    pm.expect(checkItem.idBoard).to.match(/[a-zA-Z0-9]+/);\r",
+									"    pm.expect(checkItem.idCard).to.match(/[a-zA-Z0-9]+/);\r",
+									"  });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Pos should be a number\", function () {\r",
+									"  const responseData = pm.response.json();\r",
+									"  \r",
+									"  pm.expect(responseData.pos).to.be.a('number');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"CheckItems should be an array\", function () {\r",
+									"  const responseData = pm.response.json();\r",
+									"  \r",
+									"  pm.expect(responseData.checkItems).to.be.an('array');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response is in JSON format\", function () {\r",
+									"  pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/checklists/{{checklistId}}?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"{{checklistId}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Checklist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response has the required fields\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData.id).to.exist;\r",
+									"    pm.expect(responseData.name).to.exist;\r",
+									"    pm.expect(responseData.idBoard).to.exist;\r",
+									"    pm.expect(responseData.idCard).to.exist;\r",
+									"    pm.expect(responseData.pos).to.exist;\r",
+									"    pm.expect(responseData.checkItems).to.exist;\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response Content-Type header is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is within an acceptable range\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"CheckItems array is present and contains expected number of elements\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.have.property('checkItems').that.is.an('array');\r",
+									"    pm.expect(responseData.checkItems).to.have.lengthOf(0);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/checklists/{{checklistId}}?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"{{checklistId}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Checklist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response has the required fields\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData.limits).to.exist;\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Limits object is present in the response\", function () {\r",
+									"  const responseData = pm.response.json();\r",
+									"\r",
+									"  pm.expect(responseData).to.have.property('limits');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/checklists/{{checklistId}}?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"{{checklistId}}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get field on a Checklist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"    pm.test(\"Response contains field 'name'\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData).to.have.property('_value');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Log the response\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    console.log(responseData);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Field 'name' read correctly\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData._value).to.equal(\"ChecklistTest\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/checklists/{{checklistId2}}/name?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"{{checklistId2}}",
+								"name"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update field on a Checklist",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 300ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response contains field 'name'\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData).to.have.property('name');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Field 'name' read correctly\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData.name).to.equal(\"ChecklistTestUpdated\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Log the response\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    console.log(responseData);\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"const timestamp = new Date().toISOString();\r",
+									"pm.environment.set(\"timestamp\", timestamp);"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"value\": \"ChecklistTestUpdated\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.trello.com/1/checklists/{{checklistId2}}/name?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"{{checklistId2}}",
+								"name"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Board the Checklist is on",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 300ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content-Type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response contains field 'name'\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData).to.have.property('name');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Field 'name' is correct\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData.name).to.equal(\"EQS3 Board Test\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Field 'id' is correct\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData.id).to.equal(\"66902c0fbb3f568b905188d2\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/checklists/{{checklistId2}}/board?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"{{checklistId2}}",
+								"board"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Card a Checklist is on",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status should be 200 OK\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 300ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content type should be JSON\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\", \"application/json; charset=utf-8\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Object has a non-empty ID\", function () {\r",
+									"    pm.expect(pm.response.json()[0].id).to.not.be.empty;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Object name is 'ChecklistCreate'\", function () {\r",
+									"    pm.expect(pm.response.json()[0].name).to.equal(\"ChecklistCreate\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The 'closed' property is false\", function () {\r",
+									"    pm.expect(pm.response.json()[0].closed).to.be.false;\r",
+									"});\r",
+									"\r",
+									"pm.test(\"URL matches the expected pattern\", function () {\r",
+									"    pm.expect(pm.response.json()[0].url).to.match(/^https:\\/\\/trello\\.com\\/c\\/[a-zA-Z0-9]+\\/[a-zA-Z0-9\\-]+$/);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Description is empty or null\", function () {\r",
+									"    pm.expect(pm.response.json()[0].desc).to.be.oneOf([\"\", null]);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The 'idMembers' list is empty\", function () {\r",
+									"    pm.expect(pm.response.json()[0].idMembers).to.be.empty;\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/checklists/{{checklistId2}}/cards?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"{{checklistId2}}",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Checkitems on a Checklist",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"idChecklist\", pm.iterationData.get(\"idChecklist\"));"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"const responseJson = pm.response.json();\r",
+									"\r",
+									"const ids = responseJson.map(item => item.id);\r",
+									"pm.environment.set(\"itemIds\", ids.join(\",\"));\r",
+									"\r",
+									"pm.test(\"Response status should be 200 OK\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 300ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content type should be JSON\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\", \"application/json; charset=utf-8\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"All Checklist items are in 'incomplete' status\", function () {\r",
+									"    responseJson.forEach(item => {\r",
+									"        pm.expect(item.state).to.equal(\"incomplete\");\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The name of the first item is 'Check-up A\", function () {\r",
+									"    pm.expect(responseJson[0].name).to.equal(\"Check-up A\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/checklists/{{checklistId2}}/checkItems?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"{{checklistId2}}",
+								"checkItems"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Checkitem on Checklist",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status is 200 OK\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 300ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Content type is JSON\", function () {\r",
+									"    pm.response.to.have.header(\"Content-Type\", \"application/json; charset=utf-8\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Check-up C item is created with 'incomplete' state\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData.name).to.equal(\"Check-up C\");\r",
+									"    pm.expect(responseData.state).to.equal(\"incomplete\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Checklist ID matches expected value\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData.idChecklist).to.equal(\"66913ad591d747283d2a8510\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/checklists/{{checklistId2}}/checkItems?name=Check-up C&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"{{checklistId2}}",
+								"checkItems"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Check-up C"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Labels",
+			"item": [
+				{
+					"name": "Get Label",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response has the required fields - id, idBoard, name, color, and uses\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData).to.have.property('id');",
+									"    pm.expect(responseData).to.have.property('idBoard');",
+									"    pm.expect(responseData).to.have.property('name');",
+									"    pm.expect(responseData).to.have.property('color');",
+									"    pm.expect(responseData).to.have.property('uses');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response Content-Type is application/json\", function () {",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response time is within an acceptable range\", function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/labels/669016e7c8ccab2192c6f14e?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"labels",
+								"669016e7c8ccab2192c6f14e"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Label",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(900);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response has the required fields - id, idBoard, name, color, uses\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData).to.have.property('id');",
+									"    pm.expect(responseData).to.have.property('idBoard');",
+									"    pm.expect(responseData).to.have.property('name');",
+									"    pm.expect(responseData).to.have.property('color');",
+									"    pm.expect(responseData).to.have.property('uses');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Limits object is present in the response\", function () {",
+									"  const responseData = pm.response.json();",
+									"  pm.expect(responseData).to.have.property('limits');",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Testando cor OS VELOSOS\",\n    \"color\": \"pink\",\n    \"idBoard\": \"668fc3d8649e248a2c596f92\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.trello.com/1/labels?name=OsVelososPURPLE&color=purple&idBoard=668fc3d8649e248a2c596f92&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"labels"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "OsVelososPURPLE"
+								},
+								{
+									"key": "color",
+									"value": "purple"
+								},
+								{
+									"key": "idBoard",
+									"value": "668fc3d8649e248a2c596f92"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a field on a label",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(600);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the response schema for the updated label object\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.id).to.exist.and.to.be.a('string');",
+									"    pm.expect(responseData.name).to.exist.and.to.be.a('string');",
+									"    pm.expect(responseData.color).to.exist.and.to.be.a('string');",
+									"    pm.expect(responseData.idBoard).to.exist.and.to.be.a('string');",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/labels/66901db1cd1a655b410558dc/name?value=PurpleOsVelosos&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"labels",
+								"66901db1cd1a655b410558dc",
+								"name"
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "PurpleOsVelosos"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Label",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"",
+									"pm.test(\"Response time is less than 500ms\", function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(500);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/labels/669016e7c8ccab2192c6f14e?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"labels",
+								"669016e7c8ccab2192c6f14e"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "List",
+			"item": [
+				{
+					"name": "Create a new List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response has the required fields\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData).to.have.property('id');\r",
+									"    pm.expect(responseData).to.have.property('name');\r",
+									"    pm.expect(responseData).to.have.property('closed');\r",
+									"    pm.expect(responseData).to.have.property('idBoard');\r",
+									"    pm.expect(responseData).to.have.property('pos');\r",
+									"    pm.expect(responseData).to.have.property('limits');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Id is a non-empty string\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData.id).to.be.a('string').and.to.have.lengthOf.at.least(1);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Name is a non-empty string\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData.name).to.be.a('string').and.to.have.lengthOf.at.least(1);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Closed is a boolean\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData.closed).to.be.a('boolean');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"IdBoard is a non-empty string\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData.idBoard).to.be.a('string').and.to.have.lengthOf.at.least(1);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Pos is a non-negative integer\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData.pos).to.be.a('number').and.to.satisfy((pos) => pos >= 0);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Limits is an object\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    pm.expect(responseData.limits).to.be.an('object');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Color is either null or a valid color code\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"\r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData.color).to.satisfy(function (color) {\r",
+									"        return color === null || /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/.test(color);\r",
+									"    }, \"Color should be either null or a valid color code\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists?name=OsVelosos&idBoard=668fc3d8649e248a2c596f92&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "OsVelosos"
+								},
+								{
+									"key": "idBoard",
+									"value": "668fc3d8649e248a2c596f92"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"  pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response has the required fields - id, name, closed, idBoard, and pos\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData).to.have.property('id');",
+									"    pm.expect(responseData).to.have.property('name');",
+									"    pm.expect(responseData).to.have.property('closed');",
+									"    pm.expect(responseData).to.have.property('idBoard');",
+									"    pm.expect(responseData).to.have.property('pos');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Closed field is a boolean\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.closed).to.be.a('boolean');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Name is a non-empty string\", function () {",
+									"  const responseData = pm.response.json();",
+									"  ",
+									"  pm.expect(responseData).to.be.an('object');",
+									"  pm.expect(responseData.name).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Name should not be empty\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/668fc3d8649e248a2c596f9a?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"668fc3d8649e248a2c596f9a"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Archive all Cards in List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"    pm.expect(pm.response.code).to.equal(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response has the required Content-Type header with value application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response body matches the expected schema\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.eql({});\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is within an acceptable range\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(300);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/6690161f2ad05480d0af7358/archiveAllCards?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"6690161f2ad05480d0af7358",
+								"archiveAllCards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response has the required fields - id, name, closed, color, idBoard, pos\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData).to.have.property('id');\r",
+									"    pm.expect(responseData).to.have.property('name');\r",
+									"    pm.expect(responseData).to.have.property('closed');\r",
+									"    pm.expect(responseData).to.have.property('color');\r",
+									"    pm.expect(responseData).to.have.property('idBoard');\r",
+									"    pm.expect(responseData).to.have.property('pos');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Id is a non-empty string, closed is a boolean, and pos is a non-negative integer\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"\r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData.id).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Id should be a non-empty string\");\r",
+									"    pm.expect(responseData.closed).to.be.a('boolean', \"Closed should be a boolean\");\r",
+									"    pm.expect(responseData.pos).to.be.a('number').and.to.satisfy((pos) => pos >= 0, \"Pos should be a non-negative integer\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/668fc3d8649e248a2c596f9a?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"668fc3d8649e248a2c596f9a"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Move all Cards in List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Content-Type header is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response has the required fields - id, idBoard, idList, and pos\", function () {\r",
+									"  const responseData = pm.response.json();\r",
+									"  \r",
+									"  pm.expect(responseData).to.be.an('array');\r",
+									"  responseData.forEach(function(item) {\r",
+									"    pm.expect(item.id).to.exist;\r",
+									"    pm.expect(item.idBoard).to.exist;\r",
+									"    pm.expect(item.idList).to.exist;\r",
+									"    pm.expect(item.pos).to.exist;\r",
+									"  });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Id, idBoard, and idList are non-empty strings, and pos is a non-negative integer\", function () {\r",
+									"  const responseData = pm.response.json();\r",
+									"  \r",
+									"  pm.expect(responseData).to.be.an('array');\r",
+									"  responseData.forEach(function(item) {\r",
+									"    pm.expect(item.id).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Id should be a non-empty string\");\r",
+									"    pm.expect(item.idBoard).to.be.a('string').and.to.have.lengthOf.at.least(1, \"IdBoard should be a non-empty string\");\r",
+									"    pm.expect(item.idList).to.be.a('string').and.to.have.lengthOf.at.least(1, \"IdList should be a non-empty string\");\r",
+									"    pm.expect(item.pos).to.be.a('number').and.to.be.at.least(0, \"Pos should be a non-negative integer\");\r",
+									"  });\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/6690161f2ad05480d0af7358/moveAllCards?idBoard=668fc3d8649e248a2c596f92&idList=6690161f2ad05480d0af7358&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"6690161f2ad05480d0af7358",
+								"moveAllCards"
+							],
+							"query": [
+								{
+									"key": "idBoard",
+									"value": "668fc3d8649e248a2c596f92"
+								},
+								{
+									"key": "idList",
+									"value": "6690161f2ad05480d0af7358"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Move List to Board",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response has the required fields - id, name, closed, idBoard, pos\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"\r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData).to.have.property('id');\r",
+									"    pm.expect(responseData).to.have.property('name');\r",
+									"    pm.expect(responseData).to.have.property('closed');\r",
+									"    pm.expect(responseData).to.have.property('idBoard');\r",
+									"    pm.expect(responseData).to.have.property('pos');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Id should be a non-empty string\", function () {\r",
+									"  const responseData = pm.response.json();\r",
+									"\r",
+									"  pm.expect(responseData.id).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Id should not be empty\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Closed field is a boolean value\", function () {\r",
+									"  const responseData = pm.response.json();\r",
+									"  \r",
+									"  pm.expect(responseData).to.be.an('object');\r",
+									"  pm.expect(responseData.closed).to.be.a('boolean');\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/6690161f2ad05480d0af7358/idBoard?value=668846731b0f7a0c214a5dfc&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"6690161f2ad05480d0af7358",
+								"idBoard"
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "668846731b0f7a0c214a5dfc"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cards in a List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response Content-Type header is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response JSON has the expected structure\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('array');\r",
+									"    responseData.forEach(function(card) {\r",
+									"        pm.expect(card).to.be.an('object');\r",
+									"        pm.expect(card.id).to.be.a('string');\r",
+									"        pm.expect(card.badges).to.be.an('object');\r",
+									"        pm.expect(card.badges.attachmentsByType).to.be.an('object');\r",
+									"        pm.expect(card.badges.attachmentsByType.trello).to.be.an('object');\r",
+									"        pm.expect(card.badges.attachmentsByType.trello.board).to.be.a('number');\r",
+									"        pm.expect(card.badges.attachmentsByType.trello.card).to.be.a('number');\r",
+									"        pm.expect(card.badges.location).to.be.a('boolean');\r",
+									"        pm.expect(card.badges.votes).to.be.a('number');\r",
+									"        pm.expect(card.badges.viewingMemberVoted).to.be.a('boolean');\r",
+									"        pm.expect(card.badges.subscribed).to.be.a('boolean');\r",
+									"        pm.expect(card.badges.attachments).to.be.a('number');\r",
+									"        pm.expect(card.badges.description).to.be.a('boolean');\r",
+									"        pm.expect(card.badges.dueComplete).to.be.a('boolean');\r",
+									"        pm.expect(card.closed).to.be.a('boolean');\r",
+									"        pm.expect(card.dueComplete).to.be.a('boolean');\r",
+									"        pm.expect(card.dateLastActivity).to.be.a('string');\r",
+									"        pm.expect(card.desc).to.be.a('string');\r",
+									"        pm.expect(card.descData).to.be.an('object');\r",
+									"        pm.expect(card.due).to.be.null;\r",
+									"        pm.expect(card.dueReminder).to.be.null;\r",
+									"        pm.expect(card.email).to.be.null;\r",
+									"        pm.expect(card.idBoard).to.be.a('string');\r",
+									"        pm.expect(card.idChecklists).to.be.an('array');\r",
+									"        pm.expect(card.idList).to.be.a('string');\r",
+									"        pm.expect(card.idMembers).to.be.an('array');\r",
+									"        pm.expect(card.idMembersVoted).to.be.an('array');\r",
+									"        pm.expect(card.idShort).to.be.a('number');\r",
+									"        pm.expect(card.idAttachmentCover).to.be.null;\r",
+									"        pm.expect(card.labels).to.be.an('array');\r",
+									"        pm.expect(card.idLabels).to.be.an('array');\r",
+									"        pm.expect(card.manualCoverAttachment).to.be.a('boolean');\r",
+									"        pm.expect(card.name).to.be.a('string');\r",
+									"        pm.expect(card.pos).to.be.a('number');\r",
+									"        pm.expect(card.shortLink).to.be.a('string');\r",
+									"        pm.expect(card.shortUrl).to.be.a('string');\r",
+									"        pm.expect(card.start).to.be.null;\r",
+									"        pm.expect(card.subscribed).to.be.a('boolean');\r",
+									"        pm.expect(card.url).to.be.a('string');\r",
+									"        pm.expect(card.cover).to.be.an('object');\r",
+									"        pm.expect(card.cover.idAttachment).to.be.null;\r",
+									"        pm.expect(card.cover.color).to.be.null;\r",
+									"        pm.expect(card.cover.idUploadedBackground).to.be.null;\r",
+									"        pm.expect(card.cover.size).to.be.a('string');\r",
+									"        pm.expect(card.cover.brightness).to.be.a('string');\r",
+									"        pm.expect(card.cover.idPlugin).to.be.null;\r",
+									"        pm.expect(card.isTemplate).to.be.a('boolean');\r",
+									"        pm.expect(card.cardRole).to.be.null;\r",
+									"    });\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Badges object and closed property are present in the response\", function () {\r",
+									"  const responseData = pm.response.json();\r",
+									"  \r",
+									"  pm.expect(responseData).to.be.an('array');\r",
+									"  responseData.forEach(function(card) {\r",
+									"    pm.expect(card.badges).to.exist;\r",
+									"    pm.expect(card.closed).to.exist;\r",
+									"  });\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/668846741b7e0386e8646731/cards?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"668846741b7e0386e8646731",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a field on a List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is within an acceptable range\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response has the required fields - id, name, closed, idBoard, pos\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData).to.have.property('id');\r",
+									"    pm.expect(responseData).to.have.property('name');\r",
+									"    pm.expect(responseData).to.have.property('closed');\r",
+									"    pm.expect(responseData).to.have.property('idBoard');\r",
+									"    pm.expect(responseData).to.have.property('pos');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Id is a non-empty string, closed is a boolean, and pos is a non-negative integer\", function () {\r",
+									"  const responseData = pm.response.json();\r",
+									"  \r",
+									"  pm.expect(responseData).to.be.an('object');\r",
+									"  \r",
+									"  pm.expect(responseData.id).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Id should be a non-empty string\");\r",
+									"  pm.expect(responseData.closed).to.be.a('boolean', \"Closed should be a boolean\");\r",
+									"  pm.expect(responseData.pos).to.be.a('number').and.to.be.at.least(0, \"Pos should be a non-negative integer\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/6690161f2ad05480d0af7358/?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"6690161f2ad05480d0af7358",
+								""
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Cards in a List",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"  pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response content type is application/json\", function () {\r",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response body is an array\", function () {\r",
+									"  const responseData = pm.response.json();\r",
+									"  pm.expect(responseData).to.be.an('array');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/668fc3d8649e248a2c596f9b/cards?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"668fc3d8649e248a2c596f9b",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Board a List is on",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"  pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Validate the schema of the response\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData).to.have.property('id');\r",
+									"    pm.expect(responseData).to.have.property('name');\r",
+									"    pm.expect(responseData).to.have.property('desc');\r",
+									"    pm.expect(responseData).to.have.property('closed');\r",
+									"    pm.expect(responseData).to.have.property('dateClosed');\r",
+									"    pm.expect(responseData).to.have.property('limits');\r",
+									"    pm.expect(responseData).to.have.property('pinned');\r",
+									"    pm.expect(responseData).to.have.property('starred');\r",
+									"    pm.expect(responseData).to.have.property('url');\r",
+									"    pm.expect(responseData).to.have.property('prefs');\r",
+									"    pm.expect(responseData).to.have.property('shortLink');\r",
+									"    pm.expect(responseData).to.have.property('subscribed');\r",
+									"    pm.expect(responseData).to.have.property('labelNames');\r",
+									"    pm.expect(responseData).to.have.property('powerUps');\r",
+									"    pm.expect(responseData).to.have.property('dateLastActivity');\r",
+									"    pm.expect(responseData).to.have.property('dateLastView');\r",
+									"    pm.expect(responseData).to.have.property('shortUrl');\r",
+									"    pm.expect(responseData).to.have.property('idTags');\r",
+									"    pm.expect(responseData).to.have.property('datePluginDisable');\r",
+									"    pm.expect(responseData).to.have.property('creationMethod');\r",
+									"    pm.expect(responseData).to.have.property('ixUpdate');\r",
+									"    pm.expect(responseData).to.have.property('templateGallery');\r",
+									"    pm.expect(responseData).to.have.property('enterpriseOwned');\r",
+									"    pm.expect(responseData).to.have.property('idBoardSource');\r",
+									"    pm.expect(responseData).to.have.property('premiumFeatures');\r",
+									"    pm.expect(responseData).to.have.property('idMemberCreator');\r",
+									"    pm.expect(responseData).to.have.property('type');\r",
+									"    pm.expect(responseData).to.have.property('memberships');\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Id field is present and not empty\", function () {\r",
+									"    const responseData = pm.response.json();\r",
+									"    \r",
+									"    pm.expect(responseData).to.be.an('object');\r",
+									"    pm.expect(responseData.id).to.exist.and.to.not.be.empty;\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Name field is a non-empty string\", function () {\r",
+									"  const responseData = pm.response.json();\r",
+									"  \r",
+									"  pm.expect(responseData).to.be.an('object');\r",
+									"  pm.expect(responseData.name).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Name should not be empty\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/lists/668fc3d8649e248a2c596f9a/board?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"lists",
+								"668fc3d8649e248a2c596f9a",
+								"board"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comment Management",
+			"item": [
+				{
+					"name": "Update Comment Action on a Card",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "type",
+									"value": "string",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}/{{basePath}}cards/:id/actions/:idAction/comments?text={{text}}",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"{{basePath}}cards",
+								":id",
+								"actions",
+								":idAction",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "{{text}}",
+									"description": "The new text for the comment"
+								}
+							],
+							"variable": [
+								{
+									"key": "id"
+								},
+								{
+									"key": "idAction"
+								}
+							]
+						},
+						"description": "Update an existing comment"
+					},
+					"response": []
+				},
+				{
+					"name": "Add a new comment to a Card",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "key",
+									"value": "token",
+									"type": "string"
+								},
+								{
+									"key": "type",
+									"value": "string",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{protocol}}://{{host}}/{{basePath}}cards/:668ff2188875fb773450e4e0/actions/comments?text=Testando resposta do card",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"{{basePath}}cards",
+								":668ff2188875fb773450e4e0",
+								"actions",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "Testando resposta do card",
+									"description": "The comment"
+								}
+							],
+							"variable": [
+								{
+									"key": "668ff2188875fb773450e4e0",
+									"value": ""
+								}
+							]
+						},
+						"description": "Add a new comment to a card"
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new comment to a Card",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(600);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Validate the response schema for required fields\", function () {",
+									"    const responseData = pm.response.json();",
+									"",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.id).to.exist;",
+									"    pm.expect(responseData.idMemberCreator).to.exist;",
+									"    pm.expect(responseData.data).to.exist;",
+									"    pm.expect(responseData.appCreator).to.exist;",
+									"    pm.expect(responseData.type).to.exist;",
+									"    pm.expect(responseData.date).to.exist;",
+									"    pm.expect(responseData.limits).to.exist;",
+									"    pm.expect(responseData.display).to.exist;",
+									"    pm.expect(responseData.entities).to.exist;",
+									"    pm.expect(responseData.memberCreator).to.exist;",
+									"});",
+									"",
+									"",
+									"pm.test(\"Text field inside data is a non-empty string\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.have.property('data');",
+									"    pm.expect(responseData.data.text).to.be.a('string').and.to.have.lengthOf.at.least(1, \"Text field should not be empty\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"Verify the presence and validity of the 'emoji' object inside 'textData'\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.have.property('data');",
+									"    pm.expect(responseData.data).to.have.property('textData');",
+									"    pm.expect(responseData.data.textData).to.have.property('emoji').that.is.an('object');",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.trello.com/1/cards/668ff2188875fb773450e4e0/actions/comments?text=Eu prefiro usar C++&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"cards",
+								"668ff2188875fb773450e4e0",
+								"actions",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "text",
+									"value": "Eu prefiro usar C++"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a field on a Card",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is within an acceptable range\", function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.trello.com/6690471f19a6acca017f1e6b/cards/668ff2188875fb773450e4e0/{field}?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"6690471f19a6acca017f1e6b",
+								"cards",
+								"668ff2188875fb773450e4e0",
+								"{field}"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a card",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response Content-Type is application/json\", function () {",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response time is within an acceptable range\", function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(300);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response has the required fields\", function () {",
+									"    const responseData = pm.response.json();",
+									"",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData).to.include.all.keys('id', 'badges', 'closed', 'checkItemStates', 'desc', 'dueComplete', 'dateLastActivity', 'idBoard', 'idList', 'idMembers', 'idMembersVoted', 'idShort', 'labels', 'idLabels', 'manualCoverAttachment', 'name', 'pos', 'shortLink', 'shortUrl', 'subscribed', 'url', 'cover', 'isTemplate', 'cardRole');",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "https://api.trello.com/1/cards/668ff2188875fb773450e4e0?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"cards",
+								"668ff2188875fb773450e4e0"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Comment Action",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(600);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Id, idMemberCreator, and data fields should exist\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.be.an('object');",
+									"    pm.expect(responseData.id).to.exist;",
+									"    pm.expect(responseData.idMemberCreator).to.exist;",
+									"    pm.expect(responseData.data).to.exist.and.to.be.an('object');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Verify that the limits object contains reactions with valid properties\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.limits.reactions).to.exist;",
+									"    pm.expect(responseData.limits.reactions).to.be.an('object');",
+									"    pm.expect(responseData.limits.reactions.perAction).to.have.property('status');",
+									"    pm.expect(responseData.limits.reactions.perAction).to.have.property('disableAt');",
+									"    pm.expect(responseData.limits.reactions.perAction).to.have.property('warnAt');",
+									"    pm.expect(responseData.limits.reactions.uniquePerAction).to.have.property('status');",
+									"    pm.expect(responseData.limits.reactions.uniquePerAction).to.have.property('disableAt');",
+									"    pm.expect(responseData.limits.reactions.uniquePerAction).to.have.property('warnAt');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Display object contains valid entities and memberCreator fields\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData.display).to.be.an('object');",
+									"    pm.expect(responseData.display.entities).to.be.an('object');",
+									"    pm.expect(responseData.display.entities.contextOn).to.be.an('object');",
+									"    pm.expect(responseData.display.entities.card).to.be.an('object');",
+									"    pm.expect(responseData.display.entities.comment).to.be.an('object');",
+									"    pm.expect(responseData.display.entities.memberCreator).to.be.an('object');",
+									"",
+									"    pm.expect(responseData.memberCreator).to.be.an('object');",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/actions/6690471f19a6acca017f1e6b/text?value=Eu mudei de ideia, prefiro Python&key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"actions",
+								"6690471f19a6acca017f1e6b",
+								"text"
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "Eu mudei de ideia, prefiro Python"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mark a Card's Notifications as read",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.expect(pm.response.code).to.equal(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response has the required Content-Type header with value application/json\", function () {",
+									"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response body matches the expected schema\", function () {",
+									"    const responseData = pm.response.json();",
+									"    ",
+									"    pm.expect(responseData).to.eql({});",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(400);",
+									"});",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/cards/668ff2188875fb773450e4e0/markAssociatedNotificationsRead?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"cards",
+								"668ff2188875fb773450e4e0",
+								"markAssociatedNotificationsRead"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Reaction for Action",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"shortName\": \"<string>\",\n  \"skinVariation\": \"<string>\",\n  \"native\": \"<string>\",\n  \"unified\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.trello.com/1/actions/6690471f19a6acca017f1e6b/reactions?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"actions",
+								"6690471f19a6acca017f1e6b",
+								"reactions"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a comment on a Card",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Response status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response time is less than 200ms\", function () {",
+									"  pm.expect(pm.response.responseTime).to.be.below(500);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://api.trello.com/1/cards/668ff2188875fb773450e4e0/actions/6690862d59c2b2dc64095a98/comments?key={{key}}&token={{token}}",
+							"protocol": "https",
+							"host": [
+								"api",
+								"trello",
+								"com"
+							],
+							"path": [
+								"1",
+								"cards",
+								"668ff2188875fb773450e4e0",
+								"actions",
+								"6690862d59c2b2dc64095a98",
+								"comments"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "GET me and Member",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response body structure is valid\", function () {\r",
+							"  var responseJSON = pm.response.json();\r",
+							"  pm.expect(responseJSON).to.be.an('object').that.has.property('id'); \r",
+							"});\r",
+							"\r",
+							"pm.test(\"Valid headers are present\", function () {\r",
+							"  pm.expect(pm.response.headers.has('Content-Type')).to.be.true; \r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}/{{basePath}}members/me?key={{key}}&token={{token}}",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"{{basePath}}members",
+						"me"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "protocol",
+			"value": "https",
+			"type": "string"
+		},
+		{
+			"key": "host",
+			"value": "api.trello.com",
+			"type": "string"
+		},
+		{
+			"key": "basePath",
+			"value": "1/",
+			"type": "string"
+		},
+		{
+			"key": "key",
+			"value": "68d2e502556882eadfbf225ece27b61a",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0",
+			"type": "string"
+		},
+		{
+			"key": "boardId",
+			"value": "668fc3d8649e248a2c596f92"
+		},
+		{
+			"key": "id",
+			"value": "668fd1842f843ca0b3e5608d",
+			"type": "string"
+		},
+		{
+			"key": "deleteid",
+			"value": "668fc3d8649e248a2c596f92",
+			"type": "string"
+		},
+		{
+			"key": "checklistId",
+			"value": "6690a88cbdc322ee5b0cc3ce"
+		},
+		{
+			"key": "checklistId2",
+			"value": "66913ad591d747283d2a8510"
+		},
+		{
+			"key": "boardId2",
+			"value": "66902c0fbb3f568b905188d2"
+		}
+	]
+}
