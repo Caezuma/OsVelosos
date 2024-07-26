@@ -13,6 +13,31 @@ exports.createBoard = async (req, res) => {
   }
 };
 
+exports.getBoard = async (req, res) => {
+  const { boardId } = req.params;
+
+  try {
+    const data = await BoardService.getBoard(boardId);
+    res.status(200).json(data);
+  } catch (error) {
+    logger.error(`getBoard: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+exports.updateBoard = async (req, res) => {
+  const { boardId } = req.params;
+  const { name, desc } = req.body;
+
+  try {
+    const data = await BoardService.updateBoard(boardId, name, desc);
+    res.status(200).json(data);
+  } catch (error) {
+    logger.error(`updateBoard: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
 exports.deleteBoard = async (req, res) => {
   const { boardId } = req.params;
 

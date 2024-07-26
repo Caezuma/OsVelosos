@@ -14,6 +14,31 @@ exports.createComment = async (req, res) => {
   }
 };
 
+exports.getComment = async (req, res) => {
+  const { cardId, commentId } = req.params;
+
+  try {
+    const data = await CommentService.getComment(cardId, commentId);
+    res.status(200).json(data);
+  } catch (error) {
+    logger.error(`getComment: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+exports.updateComment = async (req, res) => {
+  const { cardId, commentId } = req.params;
+  const { text } = req.body;
+
+  try {
+    const data = await CommentService.updateComment(cardId, commentId, text);
+    res.status(200).json(data);
+  } catch (error) {
+    logger.error(`updateComment: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
 exports.deleteComment = async (req, res) => {
   const { cardId, commentId } = req.params;
 

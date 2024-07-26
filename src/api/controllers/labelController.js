@@ -1,15 +1,51 @@
-const ListService = require('../business/services/listService');
+const LabelService = require('../business/services/labelService');
 const logger = require('../core/logger');
 
-exports.updateList = async (req, res) => {
-  const { listId } = req.params;
-  const { name } = req.body;
+exports.createLabel = async (req, res) => {
+  const { name, color } = req.body;
 
   try {
-    const data = await ListService.updateList(listId, name);
+    const data = await LabelService.createLabel(name, color);
     res.status(200).json(data);
   } catch (error) {
-    logger.error(`updateList: ${error.message}`);
+    logger.error(`createLabel: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+exports.getLabel = async (req, res) => {
+  const { labelId } = req.params;
+
+  try {
+    const data = await LabelService.getLabel(labelId);
+    res.status(200).json(data);
+  } catch (error) {
+    logger.error(`getLabel: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+exports.updateLabel = async (req, res) => {
+  const { labelId } = req.params;
+  const { name, color } = req.body;
+
+  try {
+    const data = await LabelService.updateLabel(labelId, name, color);
+    res.status(200).json(data);
+  } catch (error) {
+    logger.error(`updateLabel: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+exports.deleteLabel = async (req, res) => {
+  const { labelId } = req.params;
+
+  try {
+    await LabelService.deleteLabel(labelId);
+    res.status(200).json({ message: 'Label deleted successfully' });
+  } catch (error) {
+    logger.error(`deleteLabel: ${error.message}`);
     res.status(500).json({ error: error.message });
   }
 };

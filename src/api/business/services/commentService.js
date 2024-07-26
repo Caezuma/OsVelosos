@@ -11,8 +11,10 @@ class CommentService {
     return RequestManager.request('get', `/cards/${cardId}/actions/${commentId}/comments`);
   }
 
-  async updateComment(cardId, commentId) {
-    return RequestManager.request('put', `/cards/${cardId}/actions/${commentId}/comments`);
+  async updateComment(cardId, commentId, text) {
+    return RequestManager.request('put', `/cards/${cardId}/actions/${commentId}/comments`, {
+      params: { text },
+    });
   }
 
   async deleteComment(cardId, commentId) {
