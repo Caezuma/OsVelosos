@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('../src/api/core/config/loadEnv');
 const request = require('supertest');
 const app = require('../src/app');
 const Joi = require('joi');
