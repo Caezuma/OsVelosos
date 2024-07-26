@@ -1,45 +1,27 @@
-require('dotenv').config();
-const axios = require('axios');
+const CommentService = require('../business/services/commentService');
+const logger = require('../core/logger');
 
 exports.createComment = async (req, res) => {
   const { cardId } = req.params;
   const { text } = req.body;
-  const apiKey = process.env.KEY;
-  const apiToken = process.env.TOKEN;
 
   try {
-    const response = await axios.post(`https://api.trello.com/1/cards/${cardId}/actions/comments`, 
-    {
-      text
-    }, {
-      params: {
-        key: apiKey,
-        token: apiToken
-      }
-    });
-
-    res.status(201).json({ commentId: response.data.id });
+    const data = await CommentService.createComment(cardId, text);
+    res.status(201).json({ commentId: data.id });
   } catch (error) {
+    logger.error(`createComment: ${error.message}`);
     res.status(500).json({ error: error.message });
   }
 };
 
-// Função para deletar um comentário
 exports.deleteComment = async (req, res) => {
   const { cardId, commentId } = req.params;
-  const apiKey = process.env.KEY;
-  const apiToken = process.env.TOKEN;
 
   try {
-    await axios.delete(`https://api.trello.com/1/cards/${cardId}/actions/${commentId}/comments`, {
-      params: {
-        key: apiKey,
-        token: apiToken
-      }
-    });
-
+    await CommentService.deleteComment(cardId, commentId);
     res.status(200).json({ message: 'Comment deleted successfully' });
   } catch (error) {
+    logger.error(`deleteComment: ${error.message}`);
     res.status(500).json({ error: error.message });
   }
 };

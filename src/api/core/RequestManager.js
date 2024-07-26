@@ -1,4 +1,6 @@
 const axios = require('axios');
+const fs = require('fs');
+const path = require('path');
 
 class RequestManager {
   constructor() {
@@ -6,11 +8,14 @@ class RequestManager {
       return RequestManager.instance;
     }
 
+    const envConfig = JSON.parse(fs.readFileSync(path.join(__dirname, 'config/env.json')));
+    const apiConfig = JSON.parse(fs.readFileSync(path.join(__dirname, 'config/config.json')));
+
     this.axiosInstance = axios.create({
-      baseURL: 'https://api.trello.com/1',
+      baseURL: apiConfig.api.baseUrl,
       params: {
-        key: process.env.KEY,
-        token: process.env.TOKEN,
+        key: envConfig.KEY,
+        token: envConfig.TOKEN,
       },
     });
 

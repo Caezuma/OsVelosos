@@ -1,23 +1,15 @@
-require('dotenv').config();
-const axios = require('axios');
+const ListService = require('../business/services/listService');
+const logger = require('../core/logger');
 
 exports.updateList = async (req, res) => {
   const { listId } = req.params;
   const { name } = req.body;
-  const apiKey = process.env.KEY;
-  const apiToken = process.env.TOKEN;
 
   try {
-    const response = await axios.put(`https://api.trello.com/1/lists/${listId}`, null, {
-      params: {
-        name,
-        key: apiKey,
-        token: apiToken
-      }
-    });
-
-    res.status(200).json(response.data);
+    const data = await ListService.updateList(listId, name);
+    res.status(200).json(data);
   } catch (error) {
+    logger.error(`updateList: ${error.message}`);
     res.status(500).json({ error: error.message });
   }
 };

@@ -1,25 +1,15 @@
-require('dotenv').config();
-const axios = require('axios');
+const ListService = require('../business/services/listService');
+const logger = require('../core/logger');
 
-exports.getLabel = async (req, res) => {
-  const { labelId } = req.params;
-  const apiKey = process.env.KEY;
-  const apiToken = process.env.TOKEN;
-
-  if (!req.headers?.authorization?.startsWith('Bearer ')) {
-    return res.status(401).json({ error: 'Unauthorized' });
-  }
+exports.updateList = async (req, res) => {
+  const { listId } = req.params;
+  const { name } = req.body;
 
   try {
-    const response = await axios.get(`https://api.trello.com/1/labels/${labelId}`, {
-      params: {
-        key: apiKey,
-        token: apiToken
-      }
-    });
-
-    res.status(200).json(response.data);
+    const data = await ListService.updateList(listId, name);
+    res.status(200).json(data);
   } catch (error) {
+    logger.error(`updateList: ${error.message}`);
     res.status(500).json({ error: error.message });
   }
 };

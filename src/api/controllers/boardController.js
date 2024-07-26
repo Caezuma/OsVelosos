@@ -1,50 +1,26 @@
-require('dotenv').config();
-const axios = require('axios');
+const BoardService = require('../business/services/boardService');
+const logger = require('../core/logger');
 
 exports.createBoard = async (req, res) => {
   const { name, desc } = req.body;
-  const apiKey = process.env.KEY;
-  const apiToken = process.env.TOKEN;
-
-  if (!apiKey || !apiToken || req.headers['authorization'] !== `Bearer ${apiToken}`) {
-    return res.status(401).json({ error: 'Invalid or missing authentication token' });
-  }
 
   try {
-    const response = await axios.post('https://api.trello.com/1/boards/', null, {
-      params: {
-        name,
-        desc,
-        key: apiKey,
-        token: apiToken
-      }
-    });
-
-    res.status(200).json(response.data);
+    const data = await BoardService.createBoard(name, desc);
+    res.status(200).json(data);
   } catch (error) {
+    logger.error(`createBoard: ${error.message}`);
     res.status(500).json({ error: error.message });
   }
 };
 
 exports.deleteBoard = async (req, res) => {
   const { boardId } = req.params;
-  const apiKey = process.env.KEY;
-  const apiToken = process.env.TOKEN;
-
-  if (!apiKey || !apiToken || req.headers['authorization'] !== `Bearer ${apiToken}`) {
-    return res.status(401).json({ error: 'Invalid or missing authentication token' });
-  }
 
   try {
-    await axios.delete(`https://api.trello.com/1/boards/${boardId}`, {
-      params: {
-        key: apiKey,
-        token: apiToken
-      }
-    });
-
+    await BoardService.deleteBoard(boardId);
     res.status(200).json({});
   } catch (error) {
+    logger.error(`deleteBoard: ${error.message}`);
     res.status(500).json({ error: error.message });
   }
 };
