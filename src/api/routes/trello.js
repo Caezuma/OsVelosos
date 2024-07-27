@@ -8,6 +8,7 @@ const commentController = require('../controllers/commentController');
 
 router.post('/boards', boardController.createBoard);
 router.get('/boards/:boardId', boardController.getBoard);
+router.get('/boards/:boardId/actions', boardController.getBoardActions);
 router.put('/boards/:boardId', boardController.updateBoard);
 router.delete('/boards/:boardId', boardController.deleteBoard);
 

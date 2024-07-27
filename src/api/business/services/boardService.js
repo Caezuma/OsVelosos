@@ -20,6 +20,10 @@ class BoardService {
   async deleteBoard(boardId) {
     return RequestManager.request('delete', `/boards/${boardId}`);
   }
+
+  async getBoardActions(boardId) {
+    return RequestManager.request('get', `/boards/${boardId}/actions`);
+  }
 }
 
 module.exports = new BoardService();
