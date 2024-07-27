@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const app = express();
-const trelloRouter = require('./routes/trello');
+const trelloRouter = require('../src/api/routes/trello');
 
 app.use(express.json());
 app.use('/trello', trelloRouter);

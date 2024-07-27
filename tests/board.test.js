@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('../src/api/core/config/loadEnv');
 const request = require('supertest');
 const app = require('../src/app');
 const Joi = require('joi');
@@ -32,7 +32,7 @@ describe('Board Tests', () => {
       const deleteResponse = await request(app)
         .delete(`/trello/boards/${createdBoardId}`)
         .set('Authorization', `Bearer ${process.env.TOKEN}`);
-
+      
       expect(deleteResponse.status).toBe(200);
       expect(deleteResponse.body).toEqual({});
     }

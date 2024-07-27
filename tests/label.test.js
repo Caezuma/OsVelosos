@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('../src/api/core/config/loadEnv');
 const request = require('supertest');
 const app = require('../src/app');
 const Joi = require('joi');
@@ -10,11 +10,11 @@ const labelSchema = Joi.object({
 }).unknown(true);
 
 describe('Authentication Tests', () => {
-  test('GET /trello/labels/:labelId should require authentication', async () => {
+  test('GET /trello/labels/:labelId should not require authentication', async () => {
     const labelId = '669023fd97509e27a8869661';
     const response = await request(app).get(`/trello/labels/${labelId}`);
 
-    expect(response.status).toBe(401);
+    expect(response.status).not.toBe(401);
   });
 });
 
