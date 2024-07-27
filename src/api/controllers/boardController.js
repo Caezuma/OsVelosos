@@ -1,7 +1,21 @@
 const BoardService = require('../business/services/boardService');
 const logger = require('../core/logger');
 
+const TOKEN = process.env.TOKEN;
+
+const verifyToken = (req) => {
+  const authHeader = req.headers.authorization;
+  if (!authHeader || authHeader.split(' ')[1] !== TOKEN) {
+    return false;
+  }
+  return true;
+};
+
 exports.createBoard = async (req, res) => {
+  if (!verifyToken(req)) {
+    return res.status(401).json({ error: 'Invalid or missing authentication token' });
+  }
+
   const { name, desc } = req.body;
 
   try {
@@ -39,6 +53,10 @@ exports.updateBoard = async (req, res) => {
 };
 
 exports.deleteBoard = async (req, res) => {
+  if (!verifyToken(req)) {
+    return res.status(401).json({ error: 'Invalid or missing authentication token' });
+  }
+
   const { boardId } = req.params;
 
   try {
