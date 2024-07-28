@@ -30,13 +30,6 @@ Este projeto realiza a integração com a API do Trello, permitindo a criação,
     npm install
     ```
 
-3. Crie uma pasta no /src `env` na raiz do projeto e adicione suas credenciais do Trello:
-
-    ```env
-    KEY=trello-key
-    TOKEN=trello-token
-    ```
-
 ## Uso
 
 
