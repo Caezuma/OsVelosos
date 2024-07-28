@@ -34,7 +34,7 @@ router.get('/lists/:listId/board', listController.getBoardOfList);
 router.put('/lists/:listId', listController.updateList);
 router.delete('/lists/:listId', listController.deleteList);
 
-router.post('/cards/:cardId/comments', commentController.createComment);  
+router.post('/cards/:cardId/comments', commentController.createComment);
 router.get('/cards/:cardId/comments/:commentId', commentController.getComment);
 router.put('/cards/:cardId/comments/:commentId', commentController.updateComment);
 router.delete('/cards/:cardId/comments/:commentId', commentController.deleteComment);
