@@ -13,6 +13,10 @@ router.put('/boards/:boardId', boardController.updateBoard);
 router.delete('/boards/:boardId', boardController.deleteBoard);
 
 router.post('/checklists', checklistController.createChecklist);
+router.get('/checklists/:checklistId/name', checklistController.getChecklistField);
+router.get('/checklists/:checklistId/board', checklistController.getChecklistBoard);
+router.get('/checklists/:checklistId/cards', checklistController.getChecklistCard);
+router.get('/checklists/:checklistId/checkItems', checklistController.getChecklistCheckItems);
 router.get('/checklists/:checklistId', checklistController.getChecklist);
 router.put('/checklists/:checklistId', checklistController.updateChecklist);
 router.delete('/checklists/:checklistId', checklistController.deleteChecklist);

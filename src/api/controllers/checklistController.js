@@ -49,3 +49,65 @@ exports.deleteChecklist = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+exports.getChecklistField = async (req, res) => {
+  const { checklistId } = req.params;
+  const field = 'name';
+
+  try {
+    const data = await ChecklistService.getChecklistField(checklistId, field);
+    res.status(200).json({ name: data._value });
+  } catch (error) {
+    logger.error(`getChecklistField: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+
+exports.getChecklistBoard = async (req, res) => {
+  const { checklistId } = req.params;
+
+  try {
+    const data = await ChecklistService.getChecklistBoard(checklistId);
+    res.status(200).json(data);
+  } catch (error) {
+    logger.error(`getChecklistBoard: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+exports.getChecklistCard = async (req, res) => {
+  const { checklistId } = req.params;
+
+  try {
+    const data = await ChecklistService.getChecklistCard(checklistId);
+    res.status(200).json(data);
+  } catch (error) {
+    logger.error(`getChecklistCard: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+exports.getChecklistCheckItems = async (req, res) => {
+  const { checklistId } = req.params;
+
+  try {
+    const data = await ChecklistService.getChecklistCheckItems(checklistId);
+    res.status(200).json(data);
+  } catch (error) {
+    logger.error(`getChecklistCheckItems: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+exports.getChecklistName = async (req, res) => {
+  const { checklistId } = req.params;
+
+  try {
+    const data = await ChecklistService.getChecklistName(checklistId);
+    res.status(200).json(data);
+  } catch (error) {
+    logger.error(`getChecklistName: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
