@@ -67,3 +67,18 @@ exports.deleteBoard = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
+
+exports.getBoardActions = async (req, res) => {
+  const { boardId } = req.params;
+
+  try {
+    const actions = await BoardService.getBoardActions(boardId);
+    if (!actions) {
+      return res.status(404).json({ error: 'No actions found for this board' });
+    }
+    res.status(200).json(actions);
+  } catch (error) {
+    logger.error(`getBoardActions: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};

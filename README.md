@@ -28,15 +28,9 @@ Este projeto realiza a integração com a API do Trello, permitindo a criação,
 
     ```bash
     npm install
-    npm install axios
-    npm install dotenv
-    npm install express
-    npm install joi
-    npm install supertest
-    npm install jest --save-dev
     ```
 
-3. Crie um arquivo `.env` na raiz do projeto e adicione suas credenciais do Trello:
+3. Crie uma pasta no /src `env` na raiz do projeto e adicione suas credenciais do Trello:
 
     ```env
     KEY=trello-key
@@ -82,10 +76,47 @@ Este projeto realiza a integração com a API do Trello, permitindo a criação,
 
 ## Estrutura de Pastas
 
-- `src/controllers/` - Contém os controladores para cada recurso (quadros, checklists, etiquetas, listas e comentários).
-- `src/routes/` - Define as rotas para a API.
-- `src/` - Contém os arquivos principais.
-- `tests/` - Contém os arquivos de teste para os diferentes módulos.
+-   `src/controllers/` - Contém os controladores para cada recurso (quadros, checklists, etiquetas, listas e comentários).
+-   `src/routes/` - Define as rotas para a API.
+-   `src/core/` - Contém arquivos de configuração e funções essenciais.
+    -   `config/` - Configurações e variáveis de ambiente (config.json, env.json).
+    -   `RequestManager.js` - Implementação do padrão Singleton para gerenciar requisições.
+    -   `logger.js` - Implementação do Logger para geração de logs.
+    -   `loadEnv.js` - Script para carregar variáveis de ambiente.
+-   `src/business/services/` - Contém a lógica de negócios da aplicação.
+    -   `boardService.js`
+    -   `checklistService.js`
+    -   `commentService.js`
+    -   `labelService.js`
+    -   `listService.js`
+-   `tests/` - Contém os arquivos de teste para os diferentes módulos.
+    -   `board.test.js`
+    -   `checklist.test.js`
+    -   `comment.test.js`
+    -   `label.test.js`
+    -   `list.test.js`
+
+## Implementações Específicas
+
+### Configuração do ESLint
+
+O ESLint foi configurado para garantir a consistência do código. As regras podem ser ajustadas no arquivo `.eslintrc.js` conforme necessário.
+
+### Singleton Design Pattern
+
+Implementado na classe `RequestManager.js` para garantir que apenas uma instância do gerenciador de requisições seja criada.
+
+### Logger
+
+A classe `Logger` foi implementada para registrar mensagens e erros. O log é armazenado no arquivo `app.log` dentro do diretório `logs`.
+
+### Hooks de Pré/Pós-Condições nos Testes
+
+Os testes utilizam hooks (`beforeAll`, `afterAll`) para configurar e limpar o estado antes e depois da execução dos testes.
+
+### Refatoração dos Testes
+
+Os testes existentes foram refatorados para utilizar as novas implementações e respeitar as convenções estabelecidas.
 
 ## Testes
 
@@ -171,8 +202,28 @@ describe('Board Tests', () => {
 
 Contribuições são bem-vindas! Por favor, siga os passos abaixo:
 
-1. Faça um fork do projeto.
-2. Crie uma branch para sua feature ou correção de bug (`git checkout -b feature/nova-feature`).
-3. Commit suas mudanças (`git commit -am 'Adiciona nova feature'`).
-4. Faça o push para a branch (`git push origin feature/nova-feature`).
-5. Abra um Pull Request.
+1.  Faça um fork do projeto.
+2.  Crie uma branch para sua feature ou correção de bug (`git checkout -b feature/nova-feature`).
+3.  Commit suas mudanças (`git commit -am 'Adiciona nova feature'`).
+4.  Faça o push para a branch (`git push origin feature/nova-feature`).
+5.  Abra um Pull Request.
+
+## Agradecimentos
+
+Agradecemos a todos os colaboradores e à equipe de ensino por todo o suporte e conhecimento compartilhado ao longo do desenvolvimento deste projeto.
+
+## Licença
+
+Este projeto está licenciado sob a MIT License.
+
+----------
+
+**Autores:** Alefe Glaydson da Silva, Caetano da Silva Neto, Danilo dos Santos Silva, Felipe da Conceição Alves, Maria Deisiane de Melo Araujo
+
+**Disciplina:** Engenharia de Qualidade de Software 3
+
+**Professor(a):** Stenio Viveiros
+
+**Practitioner:** Rubiana Perucci
+
+**Universidade:** Jala University

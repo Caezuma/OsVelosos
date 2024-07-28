@@ -38,6 +38,44 @@ describe('Board Tests', () => {
     }
   });
 
+  test('GET /trello/boards/66902c0fbb3f568b905188d2 should retrieve a board', async () => {
+    const response = await request(app)
+      .get(`/trello/boards/66902c0fbb3f568b905188d2`)
+      .set('Authorization', `Bearer ${process.env.TOKEN}`);
+
+    expect(response.status).toBe(200);
+    expect(response.body).toHaveProperty('id', '66902c0fbb3f568b905188d2');
+  });
+
+  test('PUT /trello/boards/66902c0fbb3f568b905188d2 should update a board', async () => {
+    const updateData = { name: 'UpdatedBoardName', desc: 'updated description' };
+    const response = await request(app)
+      .put(`/trello/boards/66902c0fbb3f568b905188d2`)
+      .send(updateData)
+      .set('Authorization', `Bearer ${process.env.TOKEN}`);
+
+    expect(response.status).toBe(200);
+    expect(response.body).toMatchObject(updateData);
+  });
+
+  test('GET /trello/boards/66902c0fbb3f568b905188d2 should get the board', async () => {
+    const response = await request(app)
+      .get(`/trello/boards/66902c0fbb3f568b905188d2`)
+      .set('Authorization', `Bearer ${process.env.TOKEN}`);
+
+    expect(response.status).toBe(200);
+    expect(response.body).toHaveProperty('name');
+  });
+
+  test('GET /trello/boards/66902c0fbb3f568b905188d2/actions should get actions of a board', async () => {
+    const response = await request(app)
+      .get(`/trello/boards/66902c0fbb3f568b905188d2/actions`)
+      .set('Authorization', `Bearer ${process.env.TOKEN}`);
+  
+    expect(response.status).toBe(200);
+    expect(Array.isArray(response.body)).toBe(true);
+  });
+
   test('POST /trello/boards should return 401 if authentication fails', async () => {
     const response = await request(app)
       .post('/trello/boards')

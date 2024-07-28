@@ -20,6 +20,26 @@ class ChecklistService {
   async deleteChecklist(checklistId) {
     return RequestManager.request('delete', `/checklists/${checklistId}`);
   }
+
+  async getChecklistField(checklistId, field) {
+    return RequestManager.request('get', `/checklists/${checklistId}/${field}`);
+  }
+
+  async getChecklistBoard(checklistId) {
+    return RequestManager.request('get', `/checklists/${checklistId}/board`);
+  }
+
+  async getChecklistCard(checklistId) {
+    return RequestManager.request('get', `/checklists/${checklistId}/cards`);
+  }
+
+  async getChecklistCheckItems(checklistId) {
+    return RequestManager.request('get', `/checklists/${checklistId}/checkItems`);
+  }
+  async getChecklistName(checklistId) {
+    const response = await RequestManager.request('get', `/checklists/${checklistId}/name`);
+    return { name: response._value };
+  }
 }
 
 module.exports = new ChecklistService();
