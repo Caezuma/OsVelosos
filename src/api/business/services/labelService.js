@@ -1,9 +1,9 @@
 const RequestManager = require('../../core/RequestManager');
 
 class LabelService {
-  async createLabel(name, color) {
+  async createLabel(name, color, idBoard) {
     return RequestManager.request('post', '/labels', {
-      params: { name, color },
+      params: { name, color, idBoard },
     });
   }
 
@@ -19,6 +19,12 @@ class LabelService {
 
   async deleteLabel(labelId) {
     return RequestManager.request('delete', `/labels/${labelId}`);
+  }
+
+  async updateLabelField(labelId, field, value) {
+    return RequestManager.request('put', `/labels/${labelId}/${field}`, {
+      params: { value },
+    });
   }
 }
 

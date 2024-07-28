@@ -25,6 +25,7 @@ router.post('/labels', labelController.createLabel);
 router.get('/labels/:labelId', labelController.getLabel);
 router.put('/labels/:labelId', labelController.updateLabel);
 router.delete('/labels/:labelId', labelController.deleteLabel);
+router.patch('/labels/:labelId/:field', labelController.updateLabelField);
 
 router.post('/lists', listController.createList);
 router.get('/lists/:listId', listController.getList);
