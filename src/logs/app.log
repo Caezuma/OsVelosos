@@ -1,0 +1,1034 @@
+2024-07-27T00:45:14.929Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T00:45:15.528Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T00:45:16.712Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T00:59:10.943Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T00:59:11.173Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T00:59:12.403Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T01:11:45.207Z - ERROR - createComment: unauthorized card permission requested
+2024-07-27T01:11:45.209Z - ERROR - createBoard: unauthorized permission requested
+2024-07-27T01:11:45.213Z - ERROR - getLabel: unauthorized permission requested
+2024-07-27T01:11:45.244Z - ERROR - updateList: unauthorized permission requested
+2024-07-27T01:11:45.432Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T01:11:45.449Z - ERROR - getLabel: unauthorized permission requested
+2024-07-27T01:11:45.470Z - ERROR - updateList: unauthorized permission requested
+2024-07-27T01:11:45.495Z - ERROR - getChecklist: unauthorized permission requested
+2024-07-27T01:11:45.735Z - ERROR - getChecklist: unauthorized permission requested
+2024-07-27T01:16:24.678Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T01:16:24.956Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T01:16:25.980Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T01:20:08.825Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T01:20:09.085Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T01:20:10.359Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T01:27:30.234Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T01:27:30.493Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T01:27:32.061Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T01:28:30.206Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T01:28:30.836Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T01:28:31.958Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T01:45:14.942Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T01:45:15.208Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T01:45:16.192Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T01:48:17.694Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T01:48:17.958Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T01:48:18.878Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T01:56:51.839Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T01:56:52.091Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T01:56:53.132Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T02:05:09.354Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:05:09.610Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:06:50.879Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:06:51.125Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:06:52.395Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T02:09:28.652Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:09:28.903Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:09:29.805Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T02:14:45.267Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:14:45.523Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:14:46.558Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T02:16:26.357Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T02:16:26.757Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:16:27.020Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:22:08.086Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:22:08.350Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:22:09.861Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T02:25:05.962Z - ERROR - deleteComment: 
+2024-07-27T02:25:06.201Z - ERROR - deleteComment: 
+2024-07-27T02:25:07.364Z - ERROR - deleteBoard: 
+2024-07-27T02:32:26.089Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:32:26.341Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:32:27.320Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T02:38:57.943Z - ERROR - createBoard: [object Object]
+2024-07-27T02:38:58.050Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:38:58.793Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:38:59.247Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T02:39:42.888Z - ERROR - createBoard: [object Object]
+2024-07-27T02:39:42.913Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:39:43.496Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:39:44.133Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T02:42:17.441Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:42:17.684Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:43:43.523Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:43:43.772Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:48:23.405Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:48:23.658Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:48:24.668Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T02:51:35.398Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:51:35.644Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:51:36.658Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T02:53:38.349Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:53:38.390Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:53:38.474Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:53:38.476Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:53:38.495Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:53:38.499Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:53:38.501Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:53:38.522Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:53:38.720Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:56:43.105Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T02:56:43.355Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T02:56:44.399Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T02:57:44.531Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:57:44.573Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:57:44.587Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:57:44.606Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:57:44.615Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:57:44.631Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:57:44.649Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:57:44.673Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T02:57:44.811Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:00:45.323Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:00:45.584Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:02:53.680Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:02:53.744Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:02:53.756Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:02:53.776Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:03:15.480Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:03:15.739Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:03:17.058Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T03:05:42.715Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:42.752Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:42.766Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:42.782Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:42.787Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:42.797Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:42.815Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:42.818Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:42.848Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:53.871Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:53.871Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:53.872Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:53.873Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:53.878Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:53.894Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:53.896Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:53.900Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:05:53.909Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:07:14.778Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:07:15.033Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:07:15.975Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T03:08:51.782Z - ERROR - POST /cards/668ff2188875fb773450e4e0/actions/comments: unauthorized card permission requested
+2024-07-27T03:08:51.786Z - ERROR - createComment: unauthorized card permission requested
+2024-07-27T03:08:51.861Z - ERROR - PUT /lists/668fc3d8649e248a2c596f9a: unauthorized permission requested
+2024-07-27T03:08:51.865Z - ERROR - updateList: unauthorized permission requested
+2024-07-27T03:08:51.874Z - ERROR - POST /boards: unauthorized permission requested
+2024-07-27T03:08:51.878Z - ERROR - createBoard: unauthorized permission requested
+2024-07-27T03:08:52.023Z - ERROR - DELETE /cards/668ff2188875fb773450e4e0/actions/undefined/comments: invalid value for idAction
+2024-07-27T03:08:52.023Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:08:52.091Z - ERROR - PUT /lists/668fc3d8649e248a2c596f9a: unauthorized permission requested
+2024-07-27T03:08:52.092Z - ERROR - updateList: unauthorized permission requested
+2024-07-27T03:13:06.801Z - ERROR - deleteBoard: invalid id
+2024-07-27T03:13:06.978Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:13:07.229Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:14:42.414Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:42.503Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:42.545Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:42.560Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:48.597Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:48.596Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:48.597Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:48.596Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:55.856Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:55.888Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:55.917Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:55.929Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:55.942Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:55.945Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:55.958Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:14:55.977Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:15:52.640Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:15:52.894Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:16:40.632Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:16:40.895Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:22:28.632Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:22:28.704Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:22:28.707Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:22:28.729Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:22:54.285Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:22:54.297Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:22:54.328Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:22:54.329Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:22:54.349Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:22:54.351Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:22:54.380Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:22:54.403Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:22:54.429Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:23:38.250Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:23:38.527Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:23:39.836Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T03:28:38.146Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:28:38.418Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:28:39.654Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T03:30:22.652Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:30:22.688Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:30:22.751Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:30:22.758Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:30:22.770Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:30:22.783Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:30:22.801Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:30:22.907Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:30:22.926Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:30:51.956Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:30:52.021Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:30:52.024Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:30:52.036Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:32:16.832Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:32:17.089Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:32:18.672Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T03:33:04.432Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:33:04.710Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:33:05.641Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T03:36:52.271Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:36:52.530Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:36:53.477Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T03:38:34.829Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:38:34.848Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:10.170Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:10.272Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:10.272Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:10.297Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:22.663Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:22.698Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:22.781Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:22.789Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:22.791Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:22.804Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:22.819Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:22.820Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:22.837Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:41:51.906Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:41:52.471Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:41:53.541Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T03:46:56.741Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:46:56.998Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:46:58.012Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T03:48:35.458Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:48:35.574Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:48:35.575Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:48:35.697Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:48:53.877Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:48:53.946Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:48:53.949Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:48:53.966Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:49:00.058Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:49:00.062Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:49:00.064Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:49:00.070Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:49:00.072Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:49:00.089Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:49:00.093Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:49:00.095Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:49:00.099Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T03:49:36.333Z - ERROR - createBoard: [object Object]
+2024-07-27T03:49:36.558Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T03:49:36.808Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T03:49:37.907Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T04:03:38.159Z - ERROR - createBoard: [object Object]
+2024-07-27T04:03:38.201Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:03:38.477Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:05:11.663Z - ERROR - createBoard: [object Object]
+2024-07-27T04:05:11.946Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:05:12.211Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:05:13.000Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T04:06:32.210Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:06:32.483Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:06:33.176Z - ERROR - createBoard: [object Object]
+2024-07-27T04:06:34.534Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T04:07:26.040Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:08:21.621Z - ERROR - createBoard: [object Object]
+2024-07-27T04:08:21.920Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:08:22.168Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:09:30.454Z - ERROR - createBoard: [object Object]
+2024-07-27T04:09:31.193Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:09:31.447Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:09:37.089Z - ERROR - createBoard: [object Object]
+2024-07-27T04:09:37.733Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:09:37.996Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:11:29.273Z - ERROR - createBoard: [object Object]
+2024-07-27T04:11:37.336Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:13:04.373Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:13:04.639Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:13:05.616Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T04:14:07.951Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:14:08.211Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:14:09.078Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T04:17:33.151Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:17:33.403Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:17:39.548Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:17:39.799Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:18:40.039Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:18:40.297Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:18:41.640Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T04:24:00.443Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:24:00.697Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:24:01.753Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T04:25:54.660Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:25:54.676Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:25:54.725Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:25:54.770Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:00.992Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:01.031Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:01.044Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:01.067Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:01.067Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:01.091Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:01.092Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:01.095Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:01.115Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:10.829Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:10.850Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:10.871Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:10.893Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:10.909Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:10.921Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:10.933Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:10.935Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:10.959Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:26:18.198Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:26:18.448Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:26:20.308Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T04:40:03.779Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:03.818Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:03.847Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:03.875Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:03.885Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:03.891Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:03.912Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:03.918Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:03.929Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:16.096Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:16.131Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:16.178Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:16.180Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:16.203Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:16.206Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:16.206Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:16.206Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:40:16.226Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T04:43:02.767Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:43:03.021Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:50:05.995Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T04:50:06.252Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T04:50:07.255Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T05:01:22.120Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T05:01:22.859Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T05:01:23.624Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T05:03:18.483Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T05:03:18.536Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T05:03:18.560Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T05:03:18.577Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T05:04:48.316Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T05:04:48.583Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T05:04:49.703Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T05:12:50.191Z - ERROR - createBoard: [object Object]
+2024-07-27T05:12:50.907Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T05:12:51.153Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T05:17:24.981Z - ERROR - getChecklist: unauthorized permission requested
+2024-07-27T05:17:24.984Z - ERROR - updateList: unauthorized permission requested
+2024-07-27T05:17:24.994Z - ERROR - createBoard: unauthorized permission requested
+2024-07-27T05:17:25.003Z - ERROR - getLabel: unauthorized permission requested
+2024-07-27T05:17:25.213Z - ERROR - updateList: unauthorized permission requested
+2024-07-27T05:17:25.228Z - ERROR - getLabel: unauthorized permission requested
+2024-07-27T05:17:25.239Z - ERROR - getChecklist: unauthorized permission requested
+2024-07-27T05:17:25.255Z - ERROR - createComment: unauthorized card permission requested
+2024-07-27T05:17:25.491Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T05:22:24.220Z - ERROR - getChecklist: unauthorized permission requested
+2024-07-27T05:22:24.220Z - ERROR - createComment: unauthorized card permission requested
+2024-07-27T05:22:24.226Z - ERROR - createBoard: unauthorized permission requested
+2024-07-27T05:22:24.229Z - ERROR - getLabel: unauthorized permission requested
+2024-07-27T05:22:24.457Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T05:22:24.458Z - ERROR - getLabel: unauthorized permission requested
+2024-07-27T05:22:24.464Z - ERROR - getChecklist: unauthorized permission requested
+2024-07-27T05:22:24.691Z - ERROR - updateList: unauthorized permission requested
+2024-07-27T05:22:24.921Z - ERROR - updateList: unauthorized permission requested
+2024-07-27T05:22:46.861Z - ERROR - createBoard: [object Object]
+2024-07-27T05:22:47.082Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T05:22:47.640Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T05:24:57.117Z - ERROR - createBoard: [object Object]
+2024-07-27T05:24:57.856Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T05:24:58.114Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T05:37:39.653Z - ERROR - createBoard: [object Object]
+2024-07-27T05:37:41.370Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T05:37:41.628Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T05:43:37.787Z - ERROR - createBoard: [object Object]
+2024-07-27T05:43:38.427Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T05:43:39.201Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:07:21.160Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:07:21.201Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:07:21.236Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:07:21.241Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:07:21.264Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:07:21.265Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:07:21.277Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:07:21.295Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:07:21.306Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:15:39.539Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:15:40.258Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:15:41.150Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T06:21:15.094Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:21:15.350Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:21:16.879Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T06:23:11.154Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:23:11.407Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:23:12.951Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T06:23:38.702Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:23:38.977Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:24:39.732Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:39.805Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:39.902Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:39.907Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:39.918Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:39.954Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:39.957Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:39.977Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:40.329Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:53.493Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:53.554Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:53.569Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:53.598Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:53.611Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:53.645Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:53.653Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:53.688Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:24:53.701Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:25:17.524Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:25:17.557Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:25:17.599Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:25:17.615Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:25:17.621Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:25:17.631Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:25:17.643Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:25:17.645Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:25:17.780Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:25:40.971Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:25:40.980Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:25:41.000Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:26:02.692Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:26:02.949Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:26:06.691Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T06:29:35.814Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:29:35.847Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:29:35.915Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:29:35.934Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:29:35.948Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:29:35.952Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:29:35.958Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:29:35.976Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:30:01.463Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:30:01.523Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:30:01.569Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:30:01.572Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:30:01.610Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:30:01.613Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:30:01.617Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:30:01.649Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:31:25.244Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:31:25.494Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:31:26.712Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T06:35:58.899Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:35:58.942Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:35:58.962Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:35:58.968Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:35:58.992Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:35:59.001Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:35:59.004Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:35:59.015Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:35:59.032Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:43:31.313Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:43:31.585Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:43:32.749Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T06:45:53.056Z - ERROR - createComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:45:53.096Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:45:53.118Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:45:53.135Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:45:53.176Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:45:53.177Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:45:53.195Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:45:53.197Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:45:53.341Z - ERROR - createBoard: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T06:46:03.594Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:46:04.322Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:46:05.560Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T06:47:52.100Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:47:52.834Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:47:53.795Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T06:48:18.830Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:53:01.226Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:53:01.493Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:53:03.238Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T06:55:50.035Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:56:36.809Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:56:37.057Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:56:38.509Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T06:59:19.227Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T06:59:19.491Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T06:59:21.686Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:04:23.816Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:04:24.530Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:04:25.176Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:11:57.765Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:11:58.585Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:11:59.068Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:19:06.006Z - ERROR - deleteComment: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T07:19:06.037Z - ERROR - getChecklist: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T07:19:06.084Z - ERROR - getLabel: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T07:19:06.114Z - ERROR - updateList: getaddrinfo ENOTFOUND api.trello.com
+2024-07-27T07:20:09.631Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:20:10.367Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:20:11.078Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:20:11.352Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:32:33.298Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:32:33.550Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:32:35.016Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:32:35.239Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:33:04.247Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:33:04.499Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:33:05.497Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:33:05.726Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:36:07.446Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:36:08.031Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:36:09.008Z - ERROR - deleteBoard: invalid id
+2024-07-27T07:36:09.232Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:41:55.400Z - ERROR - createBoard: RequestManager is not defined
+2024-07-27T07:41:56.551Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:41:57.161Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:43:07.014Z - ERROR - createBoard: RequestManager is not defined
+2024-07-27T07:43:08.216Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:43:08.485Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:45:06.746Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:45:06.997Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:45:08.510Z - ERROR - deleteBoard: invalid id
+2024-07-27T07:45:09.199Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:46:22.311Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:46:22.889Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:46:23.715Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:51:06.070Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:51:06.335Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:52:27.213Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:52:27.459Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:55:18.052Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:55:18.759Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:55:19.717Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:57:52.022Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:57:52.307Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:57:53.711Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T07:58:54.644Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T07:58:54.901Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T07:58:56.145Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:01:03.038Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:01:03.306Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:02:15.401Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:02:16.122Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:03:24.028Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:03:24.295Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:05:25.777Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:05:26.032Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:05:27.647Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:08:53.094Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:08:53.666Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:08:54.418Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:13:00.049Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:13:00.304Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:14:41.091Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:14:41.340Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:15:25.751Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:15:26.336Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:15:27.489Z - ERROR - updateBoard: The requested resource was not found.
+2024-07-27T08:15:27.717Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:16:22.326Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:16:22.577Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:16:23.627Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:17:18.417Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:17:18.669Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:17:20.485Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:17:20.712Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:18:50.675Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:18:50.936Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:18:51.826Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:21:42.775Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:21:43.340Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:23:09.003Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:23:09.252Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:23:11.183Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:23:11.403Z - ERROR - getBoard: The requested resource was not found.
+2024-07-27T08:23:11.625Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:23:11.854Z - ERROR - getBoard: The requested resource was not found.
+2024-07-27T08:24:07.024Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:24:07.283Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:24:09.498Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:30:46.828Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:30:47.387Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:32:43.104Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:32:43.709Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:32:43.812Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:38:38.585Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:38:38.849Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:38:41.173Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:38:41.917Z - ERROR - getBoard: The requested resource was not found.
+2024-07-27T08:38:42.136Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:38:42.367Z - ERROR - getBoard: The requested resource was not found.
+2024-07-27T08:43:29.082Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:43:29.341Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:43:31.019Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:43:31.264Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:43:31.494Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:43:31.723Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:43:31.965Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:43:32.661Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:43:32.886Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:43:33.594Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:46:56.094Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:46:56.666Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:46:57.807Z - ERROR - getBoard: The requested resource was not found.
+2024-07-27T08:46:58.041Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T08:50:07.020Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:50:07.268Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:53:57.286Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:53:57.861Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T08:55:12.878Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T08:55:13.151Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T13:29:38.935Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T13:29:39.227Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T13:29:40.326Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T13:44:11.936Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T13:44:12.195Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T13:55:31.629Z - ERROR - createLabel: [object Object]
+2024-07-27T13:55:31.965Z - ERROR - getLabel: invalid id
+2024-07-27T13:55:32.220Z - ERROR - createLabel: [object Object]
+2024-07-27T13:55:32.290Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T13:55:32.555Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T13:55:32.992Z - ERROR - updateLabel: invalid id
+2024-07-27T13:55:33.696Z - ERROR - deleteLabel: invalid id
+2024-07-27T13:55:33.741Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T13:55:33.981Z - ERROR - deleteLabel: invalid id
+2024-07-27T14:00:06.475Z - ERROR - createLabel: [object Object]
+2024-07-27T14:00:07.006Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T14:00:07.306Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T14:00:07.991Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T14:04:35.074Z - ERROR - createLabel: [object Object]
+2024-07-27T14:04:35.486Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T14:04:35.895Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T14:04:37.677Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T14:05:01.739Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T14:05:02.466Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T14:05:03.357Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T14:09:56.871Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T14:09:57.214Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T14:09:58.270Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T14:10:36.911Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T14:10:37.181Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T14:10:38.277Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T14:13:02.229Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T14:13:02.531Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T14:13:03.344Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T14:14:08.423Z - ERROR - createLabel: invalid value for name
+2024-07-27T14:14:08.664Z - ERROR - deleteLabel: invalid id
+2024-07-27T14:14:08.788Z - ERROR - createLabel: invalid value for name
+2024-07-27T14:14:08.884Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T14:14:08.924Z - ERROR - createLabel: invalid value for name
+2024-07-27T14:14:09.210Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T14:14:10.370Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T14:16:49.882Z - ERROR - createLabel: invalid value for name
+2024-07-27T14:16:49.883Z - ERROR - createLabel: invalid value for name
+2024-07-27T14:16:50.447Z - ERROR - createBoard: [object Object]
+2024-07-27T14:16:50.462Z - ERROR - deleteLabel: invalid id
+2024-07-27T14:16:50.839Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T14:16:51.126Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T14:16:51.859Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T14:19:43.805Z - ERROR - createLabel: invalid value for name
+2024-07-27T14:21:50.634Z - ERROR - createLabel: [object Object]
+2024-07-27T14:23:51.347Z - ERROR - createLabel: [object Object]
+2024-07-27T14:26:56.329Z - ERROR - createLabel: [object Object]
+2024-07-27T14:27:38.907Z - ERROR - createLabel: [object Object]
+2024-07-27T14:31:23.533Z - ERROR - createLabel: [object Object]
+2024-07-27T14:34:44.238Z - ERROR - createLabel: [object Object]
+2024-07-27T14:36:36.832Z - ERROR - createLabel: invalid value for name
+2024-07-27T14:48:53.147Z - ERROR - createLabel: invalid value for name
+2024-07-27T14:48:53.417Z - ERROR - deleteLabel: invalid id
+2024-07-27T14:49:02.354Z - ERROR - createLabel: invalid value for name
+2024-07-27T14:49:02.703Z - ERROR - deleteLabel: invalid id
+2024-07-27T14:52:59.933Z - ERROR - createLabel: invalid value for name
+2024-07-27T14:52:59.957Z - ERROR - createLabel: [object Object]
+2024-07-27T14:53:00.261Z - ERROR - deleteLabel: invalid id
+2024-07-27T14:53:00.743Z - ERROR - createLabel: [object Object]
+2024-07-27T14:56:57.403Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T14:57:45.081Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T14:58:28.513Z - ERROR - deleteBoard: The requested resource was not found.
+2024-07-27T16:04:54.425Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T16:04:54.665Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T16:35:45.734Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T16:35:46.054Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T16:43:46.837Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T16:43:47.098Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T19:16:39.968Z - ERROR - createBoard: RequestManager is not defined
+2024-07-27T19:17:08.432Z - ERROR - createBoard: RequestManager is not defined
+2024-07-27T19:19:17.915Z - ERROR - createBoard: RequestManager is not defined
+2024-07-27T19:19:17.993Z - ERROR - deleteBoard: RequestManager is not defined
+2024-07-27T19:22:00.121Z - ERROR - createBoard: RequestManager is not defined
+2024-07-27T19:22:00.170Z - ERROR - deleteBoard: RequestManager is not defined
+2024-07-27T20:53:36.080Z - ERROR - createChecklist: invalid value for idCard
+2024-07-27T20:55:31.186Z - ERROR - createChecklist: invalid value for idCard
+2024-07-27T20:55:31.781Z - ERROR - deleteChecklist: The requested resource was not found.
+2024-07-27T21:44:50.214Z - ERROR - deleteComment: invalid value for idAction
+2024-07-27T21:44:50.465Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-27T21:48:23.496Z - ERROR - getChecklist: The requested resource was not found.
+2024-07-27T21:48:23.754Z - ERROR - getChecklist: The requested resource was not found.
+2024-07-27T21:58:32.000Z - ERROR - getChecklistName: The requested resource was not found.
+2024-07-27T21:58:32.601Z - ERROR - getChecklistBoard: The requested resource was not found.
+2024-07-27T21:58:33.023Z - ERROR - getChecklistCards: The requested resource was not found.
+2024-07-27T21:58:33.282Z - ERROR - getChecklistCheckItems: The requested resource was not found.
+2024-07-27T22:01:13.805Z - ERROR - getChecklistName: The requested resource was not found.
+2024-07-27T22:01:14.054Z - ERROR - getChecklistBoard: The requested resource was not found.
+2024-07-27T22:01:14.312Z - ERROR - getChecklistCards: The requested resource was not found.
+2024-07-27T22:01:14.548Z - ERROR - getChecklistCheckItems: The requested resource was not found.
+2024-07-27T22:02:04.595Z - ERROR - getChecklistName: The requested resource was not found.
+2024-07-27T22:02:04.866Z - ERROR - getChecklistBoard: The requested resource was not found.
+2024-07-27T22:02:05.101Z - ERROR - getChecklistCards: The requested resource was not found.
+2024-07-27T22:02:05.330Z - ERROR - getChecklistCheckItems: The requested resource was not found.
+2024-07-27T22:02:22.491Z - ERROR - getChecklistName: The requested resource was not found.
+2024-07-27T22:02:22.757Z - ERROR - getChecklistBoard: The requested resource was not found.
+2024-07-27T22:02:22.991Z - ERROR - getChecklistCards: The requested resource was not found.
+2024-07-27T22:02:23.228Z - ERROR - getChecklistCheckItems: The requested resource was not found.
+2024-07-27T22:03:03.171Z - ERROR - getChecklistName: The requested resource was not found.
+2024-07-27T22:03:03.425Z - ERROR - getChecklistBoard: The requested resource was not found.
+2024-07-27T22:03:03.650Z - ERROR - getChecklistCards: The requested resource was not found.
+2024-07-27T22:03:03.879Z - ERROR - getChecklistCheckItems: The requested resource was not found.
+2024-07-27T22:04:52.693Z - ERROR - getChecklistName: The requested resource was not found.
+2024-07-27T22:04:52.955Z - ERROR - getChecklistBoard: The requested resource was not found.
+2024-07-27T22:04:53.187Z - ERROR - getChecklistCards: The requested resource was not found.
+2024-07-27T22:04:53.476Z - ERROR - getChecklistCheckItems: The requested resource was not found.
+2024-07-27T22:06:09.601Z - ERROR - getChecklistName: logger is not defined
+2024-07-27T22:06:09.843Z - ERROR - getChecklistBoard: logger is not defined
+2024-07-27T22:06:10.071Z - ERROR - getChecklistCards: logger is not defined
+2024-07-27T22:06:10.299Z - ERROR - getChecklistCheckItems: logger is not defined
+2024-07-27T22:43:53.308Z - ERROR - getChecklistName: The requested resource was not found.
+2024-07-27T22:43:53.555Z - ERROR - getChecklistBoard: The requested resource was not found.
+2024-07-27T22:43:53.792Z - ERROR - getChecklistCards: The requested resource was not found.
+2024-07-27T22:43:54.029Z - ERROR - getChecklistCheckItems: The requested resource was not found.
+2024-07-27T23:35:47.789Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a5594de04be764e86381fb/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-27T23:35:48.033Z - ERROR - getChecklistBoard: The requested resource was not found.
+2024-07-27T23:35:48.272Z - ERROR - getChecklistCard: The requested resource was not found.
+2024-07-27T23:35:48.501Z - ERROR - getChecklistCheckItems: The requested resource was not found.
+2024-07-27T23:37:50.425Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a5594de04be764e86381fb/undefined?key={{key}}&token={{token}}&key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-27T23:37:50.657Z - ERROR - getChecklistBoard: invalid key
+2024-07-27T23:37:50.874Z - ERROR - getChecklistCard: invalid key
+2024-07-27T23:37:51.091Z - ERROR - getChecklistCheckItems: invalid key
+2024-07-27T23:41:59.189Z - ERROR - getChecklist: The requested resource was not found.
+2024-07-27T23:41:59.442Z - ERROR - getChecklist: The requested resource was not found.
+2024-07-27T23:41:59.660Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a5594de04be764e86381fb/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-27T23:41:59.908Z - ERROR - getChecklistBoard: The requested resource was not found.
+2024-07-27T23:42:00.143Z - ERROR - getChecklistCard: The requested resource was not found.
+2024-07-27T23:42:00.390Z - ERROR - getChecklistCheckItems: The requested resource was not found.
+2024-07-27T23:45:13.326Z - ERROR - getChecklistField: Cannot GET /1/checklists/66913ad591d747283d2a8510/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-27T23:45:13.608Z - ERROR - getChecklistBoard: The requested resource was not found.
+2024-07-27T23:45:13.840Z - ERROR - getChecklistCard: The requested resource was not found.
+2024-07-27T23:45:14.077Z - ERROR - getChecklistCheckItems: The requested resource was not found.
+2024-07-27T23:47:15.466Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:17:11.926Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:21:50.669Z - ERROR - getChecklistField: Cannot GET /1/checklists/66913ad591d747283d2a8510/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:21:50.933Z - ERROR - getChecklistBoard: The requested resource was not found.
+2024-07-28T00:21:51.171Z - ERROR - getChecklistCard: The requested resource was not found.
+2024-07-28T00:21:51.397Z - ERROR - getChecklistCheckItems: The requested resource was not found.
+2024-07-28T00:25:03.086Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:39:28.367Z - ERROR - getChecklistField: Cannot GET /1/checklists/669b2f7f5238594eca3abec9/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:40:13.340Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:40:43.231Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:42:24.933Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:44:53.851Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:45:54.028Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:49:12.443Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:49:24.552Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:50:02.072Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:51:29.133Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:52:19.588Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:53:33.750Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:54:07.715Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:54:58.411Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T00:57:47.387Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T01:36:21.157Z - ERROR - getChecklistField: Cannot GET /1/checklists/66a564f91b2a857d1d0a5960/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T02:02:16.417Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T02:02:16.668Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T02:09:58.159Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T02:09:58.531Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T03:35:46.687Z - ERROR - createLabel: [object Object]
+2024-07-28T03:35:46.928Z - ERROR - getLabel: invalid id
+2024-07-28T03:35:47.186Z - ERROR - getLabel: invalid id
+2024-07-28T03:35:47.414Z - ERROR - createLabel: [object Object]
+2024-07-28T03:35:47.679Z - ERROR - updateLabel: invalid id
+2024-07-28T03:35:47.903Z - ERROR - deleteLabel: invalid id
+2024-07-28T03:35:48.134Z - ERROR - deleteLabel: invalid id
+2024-07-28T03:37:47.864Z - ERROR - createLabel: [object Object]
+2024-07-28T03:37:48.597Z - ERROR - createLabel: [object Object]
+2024-07-28T03:37:48.822Z - ERROR - updateLabel: invalid id
+2024-07-28T03:37:49.050Z - ERROR - createLabel: [object Object]
+2024-07-28T03:37:49.293Z - ERROR - deleteLabel: invalid id
+2024-07-28T03:37:49.826Z - ERROR - deleteLabel: invalid id
+2024-07-28T03:42:20.963Z - ERROR - createLabel: [object Object]
+2024-07-28T03:42:21.681Z - ERROR - createLabel: [object Object]
+2024-07-28T03:42:21.909Z - ERROR - updateLabel: invalid id
+2024-07-28T03:42:22.605Z - ERROR - createLabel: [object Object]
+2024-07-28T03:42:22.829Z - ERROR - deleteLabel: invalid id
+2024-07-28T03:42:23.538Z - ERROR - deleteLabel: invalid id
+2024-07-28T03:52:05.990Z - ERROR - createLabel: [object Object]
+2024-07-28T03:52:06.882Z - ERROR - createLabel: [object Object]
+2024-07-28T03:52:07.685Z - ERROR - updateLabel: invalid id
+2024-07-28T03:52:07.924Z - ERROR - createLabel: [object Object]
+2024-07-28T03:52:08.197Z - ERROR - deleteLabel: invalid id
+2024-07-28T03:52:08.992Z - ERROR - deleteLabel: invalid id
+2024-07-28T03:56:26.003Z - ERROR - createLabel: [object Object]
+2024-07-28T03:56:27.039Z - ERROR - createLabel: [object Object]
+2024-07-28T03:56:27.751Z - ERROR - updateLabel: invalid id
+2024-07-28T03:56:28.488Z - ERROR - createLabel: [object Object]
+2024-07-28T03:56:28.796Z - ERROR - deleteLabel: invalid id
+2024-07-28T03:56:29.102Z - ERROR - deleteLabel: invalid id
+2024-07-28T04:48:49.140Z - ERROR - createLabel: {}
+2024-07-28T04:48:49.503Z - ERROR - createLabel: {}
+2024-07-28T04:48:50.663Z - ERROR - createLabel: {}
+2024-07-28T04:48:50.939Z - ERROR - updateLabel: {}
+2024-07-28T04:48:51.754Z - ERROR - createLabel: {}
+2024-07-28T04:48:51.987Z - ERROR - deleteLabel: {}
+2024-07-28T04:48:52.783Z - ERROR - deleteLabel: {}
+2024-07-28T04:48:53.497Z - ERROR - deleteLabel: {}
+2024-07-28T04:49:05.214Z - ERROR - createLabel: {}
+2024-07-28T04:49:05.581Z - ERROR - createLabel: {}
+2024-07-28T04:49:06.808Z - ERROR - createLabel: {}
+2024-07-28T04:49:07.042Z - ERROR - updateLabel: {}
+2024-07-28T04:49:07.321Z - ERROR - createLabel: {}
+2024-07-28T04:49:07.555Z - ERROR - deleteLabel: {}
+2024-07-28T04:49:08.344Z - ERROR - deleteLabel: {}
+2024-07-28T04:49:09.062Z - ERROR - deleteLabel: {}
+2024-07-28T04:49:32.544Z - ERROR - createLabel: invalid value for name
+2024-07-28T04:49:32.796Z - ERROR - createLabel: invalid value for name
+2024-07-28T04:49:33.653Z - ERROR - createLabel: invalid value for name
+2024-07-28T04:49:33.944Z - ERROR - updateLabel: invalid id
+2024-07-28T04:49:34.250Z - ERROR - createLabel: invalid value for name
+2024-07-28T04:49:34.557Z - ERROR - deleteLabel: invalid id
+2024-07-28T04:49:35.260Z - ERROR - deleteLabel: invalid id
+2024-07-28T04:49:35.991Z - ERROR - deleteLabel: invalid id
+2024-07-28T05:11:32.871Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T05:11:33.128Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T06:07:35.604Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T06:07:35.847Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T06:07:38.733Z - ERROR - deleteLabel: The requested resource was not found.
+2024-07-28T06:12:14.569Z - ERROR - createList: invalid value for idBoard
+2024-07-28T06:12:14.799Z - ERROR - createList: invalid value for name
+2024-07-28T06:12:15.185Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T06:12:15.255Z - ERROR - updateList: invalid id
+2024-07-28T06:12:15.749Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T06:12:15.932Z - ERROR - updateList: invalid id
+2024-07-28T06:12:16.132Z - ERROR - deleteList: Cannot DELETE /1/lists/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:17:44.724Z - ERROR - deleteList: Cannot DELETE /1/lists/66a5e284cfe324b8a291fe4f?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:18:55.355Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T06:18:55.918Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T06:18:56.959Z - ERROR - deleteList: Cannot DELETE /1/lists/66a5e2ce7ef527e5d37376de?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:20:43.342Z - ERROR - deleteList: Cannot DELETE /1/lists/66a5e33978f27c4c98246285?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:25:23.176Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T06:25:23.426Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T06:25:24.385Z - ERROR - deleteList: Cannot DELETE /1/lists/66a5e45235215726a1b7d734?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:39:34.760Z - ERROR - createComment: The requested resource was not found.
+2024-07-28T06:39:35.004Z - ERROR - createComment: The requested resource was not found.
+2024-07-28T06:39:35.220Z - ERROR - getComment: Cannot GET /1/cards/5b6895c1ddc1b35126e97d43/actions/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:39:35.737Z - ERROR - updateComment: Cannot PUT /1/cards/5b6895c1ddc1b35126e97d43/actions/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0&text=Updated+Test+Comment
+2024-07-28T06:39:35.950Z - ERROR - deleteComment: Cannot DELETE /1/cards/5b6895c1ddc1b35126e97d43/actions/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:39:36.639Z - ERROR - deleteComment: Cannot DELETE /1/cards/5b6895c1ddc1b35126e97d43/actions/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:40:59.308Z - ERROR - createComment: The requested resource was not found.
+2024-07-28T06:40:59.553Z - ERROR - createComment: The requested resource was not found.
+2024-07-28T06:40:59.779Z - ERROR - getComment: Cannot GET /1/cards/668fc3d8649e248a2c596f9a/actions/undefined/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:41:00.018Z - ERROR - updateComment: invalid value for idAction
+2024-07-28T06:41:00.264Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T06:41:00.494Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T06:41:18.004Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T06:41:18.313Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T06:42:54.527Z - ERROR - createComment: invalid id
+2024-07-28T06:42:54.772Z - ERROR - updateComment: invalid value for idAction
+2024-07-28T06:42:54.993Z - ERROR - getComment: Cannot GET /1/cards/undefined/actions/undefined/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:42:55.227Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T06:44:29.792Z - ERROR - createComment: invalid id
+2024-07-28T06:44:30.336Z - ERROR - updateComment: invalid value for idAction
+2024-07-28T06:44:31.032Z - ERROR - getComment: Cannot GET /1/cards/undefined/actions/undefined/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:44:31.246Z - ERROR - deleteList: Cannot DELETE /1/lists/66a5e8cc24cbe40c93c8a0dc?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:46:06.090Z - ERROR - createComment: invalid id
+2024-07-28T06:46:06.332Z - ERROR - updateComment: invalid value for idAction
+2024-07-28T06:46:07.012Z - ERROR - getComment: Cannot GET /1/cards/undefined/actions/undefined/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:46:24.084Z - ERROR - createComment: invalid id
+2024-07-28T06:46:24.330Z - ERROR - updateComment: invalid value for idAction
+2024-07-28T06:46:24.546Z - ERROR - getComment: Cannot GET /1/cards/undefined/actions/undefined/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:46:24.759Z - ERROR - deleteList: Cannot DELETE /1/lists/66a5e93f54c1086502dca971?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:51:55.140Z - ERROR - createComment: invalid id
+2024-07-28T06:51:55.380Z - ERROR - updateComment: invalid value for idAction
+2024-07-28T06:51:55.702Z - ERROR - getAllComments: invalid id
+2024-07-28T06:51:55.914Z - ERROR - getComment: Cannot GET /1/cards/undefined/actions/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:51:56.148Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T06:52:08.994Z - ERROR - createComment: invalid id
+2024-07-28T06:52:09.243Z - ERROR - updateComment: invalid value for idAction
+2024-07-28T06:52:09.944Z - ERROR - getAllComments: invalid id
+2024-07-28T06:52:10.460Z - ERROR - getComment: Cannot GET /1/cards/undefined/actions/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T06:52:10.676Z - ERROR - deleteList: Cannot DELETE /1/lists/66a5ea98d6bf3fe6fdc83fad?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T07:00:55.286Z - ERROR - getAllComments: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T07:00:55.510Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a5eca676a8b8b1f227ea20/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T07:03:00.528Z - ERROR - getAllComments: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T07:03:00.766Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a5ed23af06f7f1c809a9cf/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T13:11:42.431Z - ERROR - createComment: The requested resource was not found.
+2024-07-28T13:11:42.752Z - ERROR - getComment: Cannot GET /1/cards/60d21b4667d0d8992e610c85/actions/undefined/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T13:11:43.059Z - ERROR - updateComment: invalid value for idAction
+2024-07-28T13:11:43.366Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T13:11:44.087Z - ERROR - deleteList: Cannot DELETE /1/lists/66a6438de90c1718b24d5854?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T13:17:35.700Z - ERROR - createComment: The requested resource was not found.
+2024-07-28T13:17:36.018Z - ERROR - getComment: Cannot GET /1/cards/60d21b4667d0d8992e610c85/actions/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T13:17:36.735Z - ERROR - updateComment: Cannot PUT /1/cards/60d21b4667d0d8992e610c85/actions/undefined/text?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0&text=Updated+test+comment
+2024-07-28T13:17:37.041Z - ERROR - deleteComment: Cannot DELETE /1/cards/60d21b4667d0d8992e610c85/actions/undefined?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T13:17:37.351Z - ERROR - createComment: The requested resource was not found.
+2024-07-28T13:17:38.169Z - ERROR - deleteList: Cannot DELETE /1/lists/66a644ef68adb2f9705789a8?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T13:22:07.012Z - ERROR - deleteList: Cannot DELETE /1/lists/66a645feaac367450703ee2a?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T13:23:43.114Z - ERROR - deleteList: Cannot DELETE /1/lists/66a6465e76292493fe989ccb?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T13:46:56.680Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T13:46:57.412Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T13:58:47.576Z - ERROR - createReaction: invalid id
+2024-07-28T13:58:47.824Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T13:58:48.632Z - ERROR - createReaction: invalid reaction
+2024-07-28T13:58:49.404Z - ERROR - updateActionText: invalid value for value
+2024-07-28T13:58:49.934Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T13:58:50.161Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T14:00:09.501Z - ERROR - createReaction: invalid id
+2024-07-28T14:00:09.765Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T14:00:10.772Z - ERROR - createReaction: invalid reaction
+2024-07-28T14:00:11.006Z - ERROR - updateActionText: invalid value for value
+2024-07-28T14:00:11.713Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T14:00:12.419Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T14:04:37.124Z - ERROR - createReaction: invalid id
+2024-07-28T14:04:37.373Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T14:06:24.679Z - ERROR - createReaction: invalid reaction
+2024-07-28T14:06:24.923Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T14:17:30.889Z - ERROR - createReaction: invalid reaction
+2024-07-28T14:17:31.130Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T14:18:59.091Z - ERROR - createReaction: invalid reaction
+2024-07-28T14:18:59.335Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T14:20:53.379Z - ERROR - createReaction: invalid reaction
+2024-07-28T14:20:53.623Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T14:25:02.642Z - ERROR - createReaction: invalid reaction
+2024-07-28T14:25:23.116Z - ERROR - createReaction: invalid reaction
+2024-07-28T14:27:21.169Z - ERROR - createReaction: invalid reaction
+2024-07-28T14:32:50.785Z - ERROR - createReaction: invalid id
+2024-07-28T14:32:51.340Z - ERROR - getAction: invalid id
+2024-07-28T14:32:51.569Z - ERROR - updateActionText: invalid id
+2024-07-28T14:32:52.101Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T14:32:52.318Z - ERROR - deleteList: Cannot DELETE /1/lists/66a65692f2aba3142813a613?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T14:44:15.668Z - ERROR - createReaction: invalid id
+2024-07-28T14:44:15.909Z - ERROR - getAction: invalid id
+2024-07-28T14:44:16.606Z - ERROR - updateActionText: invalid id
+2024-07-28T14:44:16.858Z - ERROR - deleteReaction: invalid value for idReaction
+2024-07-28T14:44:17.074Z - ERROR - deleteList: Cannot DELETE /1/lists/66a6593ef48fa2fd2492ea35?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T14:52:12.521Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T14:52:12.789Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T14:56:04.277Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T14:56:05.029Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:26:19.390Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T15:30:41.736Z - ERROR - createComment: invalid value for text
+2024-07-28T15:35:00.462Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:35:00.714Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T15:35:01.296Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:36:01.202Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:36:01.443Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T15:36:01.698Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:37:27.833Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a665b8d08e7f375497ad3a/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:37:29.019Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:37:29.722Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T15:37:29.968Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:37:40.335Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a665c472a8baf44c061766/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:37:41.513Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:37:41.748Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T15:37:42.008Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:39:18.944Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a666273029015072adc18c/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:39:21.068Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:39:21.298Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T15:39:22.055Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:41:01.511Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a6668d5b8462700b6857c4?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:01.735Z - ERROR - updateComment: Cannot PUT /1/cards/668ff2188875fb773450e4e0/actions/66a6668d5b8462700b6857c4?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:01.950Z - ERROR - deleteComment: Cannot DELETE /1/cards/668ff2188875fb773450e4e0/actions/66a6668d5b8462700b6857c4?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:02.490Z - ERROR - deleteComment: Cannot DELETE /1/cards/668ff2188875fb773450e4e0/actions/66a6668d5b8462700b6857c4?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:02.707Z - ERROR - deleteComment: Cannot DELETE /1/cards/668ff2188875fb773450e4e0/actions/invalidCommentId?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:03.380Z - ERROR - deleteComment: Cannot DELETE /1/cards/668ff2188875fb773450e4e0/actions/66a6668d5b8462700b6857c4?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:42.440Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a666b6137b9b0b935fb9ac?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:42.676Z - ERROR - updateComment: Cannot PUT /1/cards/668ff2188875fb773450e4e0/actions/66a666b6137b9b0b935fb9ac?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:42.890Z - ERROR - deleteComment: Cannot DELETE /1/cards/668ff2188875fb773450e4e0/actions/66a666b6137b9b0b935fb9ac?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:43.100Z - ERROR - deleteComment: Cannot DELETE /1/cards/668ff2188875fb773450e4e0/actions/66a666b6137b9b0b935fb9ac?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:43.309Z - ERROR - deleteComment: Cannot DELETE /1/cards/668ff2188875fb773450e4e0/actions/invalidCommentId?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:43.525Z - ERROR - deleteComment: Cannot DELETE /1/cards/668ff2188875fb773450e4e0/actions/66a666b6137b9b0b935fb9ac?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:57.003Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a666c5eb3e7c5c6ee464e7/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:41:58.093Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:41:58.318Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T15:41:58.558Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:46:59.034Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a667f37abb5ed29040a5e9/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:47:00.109Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:47:00.801Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T15:47:01.383Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:51:57.856Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:51:58.419Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T15:51:58.670Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:52:28.708Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:52:29.415Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T15:52:29.669Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:53:19.004Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a6696fc7818fe64ba4cb38/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:53:20.157Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:53:20.381Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T15:53:20.945Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:57:47.971Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a66a7c6e3d831d85d17e51?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T15:57:48.229Z - ERROR - updateComment: The requested resource was not found.
+2024-07-28T15:57:49.422Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T15:57:49.656Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T15:57:50.215Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T16:11:00.136Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a66d94cb1e1fbc2060d317/comments?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T16:11:02.072Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T16:11:02.649Z - ERROR - createComment: invalid value for text
+2024-07-28T16:11:02.883Z - ERROR - updateComment: invalid value for idAction
+2024-07-28T16:11:03.643Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T16:11:04.356Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T16:14:58.540Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a66e83f039ff5b4af677e3?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T16:14:58.771Z - ERROR - updateComment: Cannot PUT /1/cards/668ff2188875fb773450e4e0/actions/66a66e83f039ff5b4af677e3/text?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0&value=Eu+mudei+de+ideia,+prefiro+Python
+2024-07-28T16:14:59.900Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T16:15:00.147Z - ERROR - createComment: invalid value for text
+2024-07-28T16:15:00.818Z - ERROR - updateComment: Cannot PUT /1/cards/668ff2188875fb773450e4e0/actions/nonExistentCommentId/text?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0&value=Trying+to+update+non-existent+comment
+2024-07-28T16:15:01.524Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T16:15:01.815Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T16:15:42.651Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a66eaf2d13178316d90015?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T16:15:43.199Z - ERROR - updateComment: Cannot PUT /1/cards/668ff2188875fb773450e4e0/actions/66a66eaf2d13178316d90015/text?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0&value=Eu+mudei+de+ideia,+prefiro+Python
+2024-07-28T16:15:44.825Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T16:15:45.054Z - ERROR - createComment: invalid value for text
+2024-07-28T16:15:45.264Z - ERROR - updateComment: Cannot PUT /1/cards/668ff2188875fb773450e4e0/actions/nonExistentCommentId/text?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0&value=Trying+to+update+non-existent+comment
+2024-07-28T16:15:45.971Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T16:15:46.723Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T16:16:17.714Z - ERROR - getComment: Cannot GET /1/cards/668ff2188875fb773450e4e0/actions/66a66ed2d4ce88a8b370a76d?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T16:16:17.939Z - ERROR - updateComment: Cannot PUT /1/cards/668ff2188875fb773450e4e0/actions/66a66ed2d4ce88a8b370a76d/text?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0&value=Eu+mudei+de+ideia,+prefiro+Python
+2024-07-28T16:16:19.400Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T16:16:19.638Z - ERROR - createComment: invalid value for text
+2024-07-28T16:16:20.314Z - ERROR - updateComment: Cannot PUT /1/cards/668ff2188875fb773450e4e0/actions/nonExistentCommentId/text?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0&value=Trying+to+update+non-existent+comment
+2024-07-28T16:16:21.007Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T16:16:21.737Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T16:18:18.779Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T16:18:19.023Z - ERROR - createComment: invalid value for text
+2024-07-28T16:18:19.230Z - ERROR - updateComment: Cannot PUT /1/cards/668ff2188875fb773450e4e0/actions/nonExistentCommentId/text?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0&value=Trying+to+update+non-existent+comment
+2024-07-28T16:18:19.938Z - ERROR - deleteComment: The requested resource was not found.
+2024-07-28T16:33:26.584Z - ERROR - deleteComment: invalid value for idAction
+2024-07-28T16:33:26.812Z - ERROR - createComment: invalid value for text
+2024-07-28T16:33:27.026Z - ERROR - updateComment: Cannot PUT /1/cards/668ff2188875fb773450e4e0/actions/nonExistentCommentId/text?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0&value=Trying+to+update+non-existent+comment
+2024-07-28T16:33:27.243Z - ERROR - deleteList: Cannot DELETE /1/lists/66a672d58175db7c25084104?key=68d2e502556882eadfbf225ece27b61a&token=ATTAc353356540b9d45761e8be62d567a7d74e7405cc9d3181e46504795f4f033637B5CF1CA0
+2024-07-28T16:33:27.277Z - ERROR - deleteComment: The requested resource was not found.
