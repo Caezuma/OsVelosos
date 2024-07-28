@@ -2,10 +2,10 @@ const ListService = require('../business/services/listService');
 const logger = require('../core/logger');
 
 exports.createList = async (req, res) => {
-  const { name, boardId } = req.body;
+  const { name, idBoard } = req.body;
 
   try {
-    const data = await ListService.createList(name, boardId);
+    const data = await ListService.createList(name, idBoard);
     res.status(200).json(data);
   } catch (error) {
     logger.error(`createList: ${error.message}`);
@@ -46,6 +46,30 @@ exports.deleteList = async (req, res) => {
     res.status(200).json({ message: 'List deleted successfully' });
   } catch (error) {
     logger.error(`deleteList: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+exports.getCardsInList = async (req, res) => {
+  const { listId } = req.params;
+
+  try {
+    const data = await ListService.getCardsInList(listId);
+    res.status(200).json(data);
+  } catch (error) {
+    logger.error(`getCardsInList: ${error.message}`);
+    res.status(500).json({ error: error.message });
+  }
+};
+
+exports.getBoardOfList = async (req, res) => {
+  const { listId } = req.params;
+
+  try {
+    const data = await ListService.getBoardOfList(listId);
+    res.status(200).json(data);
+  } catch (error) {
+    logger.error(`getBoardOfList: ${error.message}`);
     res.status(500).json({ error: error.message });
   }
 };

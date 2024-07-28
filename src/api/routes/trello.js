@@ -29,6 +29,8 @@ router.patch('/labels/:labelId/:field', labelController.updateLabelField);
 
 router.post('/lists', listController.createList);
 router.get('/lists/:listId', listController.getList);
+router.get('/lists/:listId/cards', listController.getCardsInList);
+router.get('/lists/:listId/board', listController.getBoardOfList);
 router.put('/lists/:listId', listController.updateList);
 router.delete('/lists/:listId', listController.deleteList);
 

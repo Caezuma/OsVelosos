@@ -1,9 +1,9 @@
 const RequestManager = require('../../core/RequestManager');
 
 class ListService {
-  async createList(name, boardId) {
+  async createList(name, idBoard) {
     return RequestManager.request('post', '/lists', {
-      params: { name, boardId },
+      params: { name, idBoard },
     });
   }
 
@@ -19,6 +19,14 @@ class ListService {
 
   async deleteList(listId) {
     return RequestManager.request('delete', `/lists/${listId}`);
+  }
+
+  async getCardsInList(listId) {
+    return RequestManager.request('get', `/lists/${listId}/cards`);
+  }
+
+  async getBoardOfList(listId) {
+    return RequestManager.request('get', `/lists/${listId}/board`);
   }
 }
 
