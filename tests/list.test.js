@@ -5,7 +5,8 @@ const Joi = require('joi');
 
 describe('List Tests', () => {
   const apiToken = process.env.TOKEN;
-  const apiKey = process.env.KEY;
+  const boardId = process.env.BOARD_ID2;
+  const listId = process.env.LIST_ID;
   let testListId;
 
   beforeAll(async () => {
@@ -13,7 +14,7 @@ describe('List Tests', () => {
       .post('/trello/lists')
       .send({
         name: 'Test List',
-        idBoard: '668fc3d8649e248a2c596f92'
+        idBoard: boardId
       })
       .set('Authorization', `Bearer ${apiToken}`);
       
@@ -29,7 +30,7 @@ describe('List Tests', () => {
   test('Create a new List', async () => {
     const response = await request(app)
       .post(`/trello/lists`)
-      .send({ name: 'OsVelosos', idBoard: '668fc3d8649e248a2c596f92' })
+      .send({ name: 'OsVelosos', idBoard: boardId })
       .set('Authorization', `Bearer ${apiToken}`);
 
     expect(response.status).toBe(200);
@@ -62,7 +63,6 @@ describe('List Tests', () => {
   });
 
   test('Get Cards in a List', async () => {
-    const listId = '668846741b7e0386e8646731';
     const response = await request(app)
       .get(`/trello/lists/${listId}/cards`)
       .set('Authorization', `Bearer ${apiToken}`);
@@ -81,7 +81,6 @@ describe('List Tests', () => {
   });
 
   test('Get the Board a List is on', async () => {
-    const listId = '668fc3d8649e248a2c596f9b';
     const response = await request(app)
       .get(`/trello/lists/${listId}/board`)
       .set('Authorization', `Bearer ${apiToken}`);

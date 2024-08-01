@@ -4,14 +4,15 @@ const app = require('../src/app');
 const Joi = require('joi');
 
 describe('Comment API Tests', () => {
-  let cardId = '668ff2188875fb773450e4e0';
+  const cardId = process.env.CARD_ID;
   let commentId;
   let newCommentId;
 
   beforeAll(async () => {
     const response = await request(app)
       .post(`/trello/cards/${cardId}/comments`)
-      .send({ text: 'This is a test comment' });
+      .send({ text: 'This is a test comment' })
+      .set('Authorization', `Bearer ${process.env.TOKEN}`);
 
     expect(response.status).toBe(201);
     expect(response.body).toHaveProperty('commentId'); 
@@ -22,7 +23,8 @@ describe('Comment API Tests', () => {
   test('Create a new comment to a Card', async () => {
     const response = await request(app)
       .post(`/trello/cards/${cardId}/comments`)
-      .send({ text: 'Eu prefiro usar C++' });
+      .send({ text: 'Eu prefiro usar C++' })
+      .set('Authorization', `Bearer ${process.env.TOKEN}`);
 
     expect(response.status).toBe(201);
     expect(response.body).toHaveProperty('commentId');
@@ -65,7 +67,8 @@ describe('Comment API Tests', () => {
   test('Attempt to create a comment with empty text should return status 500', async () => {
     const response = await request(app)
       .post(`/trello/cards/${cardId}/comments`)
-      .send({ text: '' });
+      .send({ text: '' })
+      .set('Authorization', `Bearer ${process.env.TOKEN}`);
 
     expect(response.status).toBe(500);
     expect(response.body).toHaveProperty('error');
@@ -76,7 +79,8 @@ describe('Comment API Tests', () => {
     const nonExistentCommentId = 'nonExistentCommentId';
     const response = await request(app)
       .put(`/trello/cards/${cardId}/comments/${nonExistentCommentId}`)
-      .send({ text: 'Trying to update non-existent comment' });
+      .send({ text: 'Trying to update non-existent comment' })
+      .set('Authorization', `Bearer ${process.env.TOKEN}`);
 
     expect(response.status).toBe(500);
     expect(response.body).toHaveProperty('error');

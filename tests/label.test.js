@@ -10,7 +10,7 @@ const labelSchema = Joi.object({
 }).unknown(true);
 
 let testLabelId;
-let testLabelId2;
+const testLabelId2 = process.env.LABEL_ID2;
 
 beforeAll(async () => {
   const response = await request(app)
@@ -18,12 +18,11 @@ beforeAll(async () => {
     .send({
       name: 'Test Label',
       color: 'green',
-      idBoard: '668fc3d8649e248a2c596f92'
+      idBoard: process.env.BOARD_ID2
     })
     .set('Authorization', `Bearer ${process.env.TOKEN}`);
 
   testLabelId = response.body.id;
-  testLabelId2 = '66a4fed7286948d3febe56ed'; // Assuming this label exists for the test
 });
 
 afterAll(async () => {
@@ -34,7 +33,7 @@ afterAll(async () => {
 
 describe('Authentication Tests', () => {
   test('GET /trello/labels/:labelId should not require authentication', async () => {
-    const labelId = '669023fd97509e27a8869661';
+    const labelId = process.env.LABEL_ID;
     const response = await request(app).get(`/trello/labels/${labelId}`);
 
     expect(response.status).not.toBe(401);
@@ -43,7 +42,7 @@ describe('Authentication Tests', () => {
 
 describe('Label Tests', () => {
   test('GET /trello/labels/:labelId should retrieve a label and return status 200', async () => {
-    const labelId = '669023fd97509e27a8869661';
+    const labelId = process.env.LABEL_ID;
     const response = await request(app)
       .get(`/trello/labels/${labelId}`)
       .set('Authorization', `Bearer ${process.env.TOKEN}`);
@@ -59,7 +58,7 @@ describe('Label Tests', () => {
       .send({
         name: 'Testando cor OS VELOSOS',
         color: 'pink',
-        idBoard: '668fc3d8649e248a2c596f92'
+        idBoard: process.env.BOARD_ID2
       })
       .set('Authorization', `Bearer ${process.env.TOKEN}`);
 
@@ -92,7 +91,7 @@ describe('Label Tests', () => {
       .send({
         name: 'Label to be deleted',
         color: 'yellow',
-        idBoard: '668fc3d8649e248a2c596f92'
+        idBoard: process.env.BOARD_ID2
       })
       .set('Authorization', `Bearer ${process.env.TOKEN}`);
 
