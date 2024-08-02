@@ -24,10 +24,17 @@ class RequestManager {
 
   async request(method, url, options = {}) {
     try {
+      const { params, body, ...rest } = options;
       const response = await this.axiosInstance.request({
         method,
         url,
-        ...options,
+        params: {
+          key: this.axiosInstance.defaults.params.key,
+          token: this.axiosInstance.defaults.params.token,
+          ...params,
+        },
+        data: body,
+        ...rest,
       });
       return response.data;
     } catch (error) {

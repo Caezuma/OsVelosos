@@ -4,7 +4,7 @@
   "description": "Equipe para desenvolvimento do módulo de EQS3 da Jala University",
   "main": "app.js",
   "scripts": {
-    "test": "jest/board"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
