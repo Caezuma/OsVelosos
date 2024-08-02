@@ -2,9 +2,9 @@
   "name": "osvelosos",
   "version": "1.0.0",
   "description": "Equipe para desenvolvimento do módulo de EQS3 da Jala University",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest/board"
   },
   "keywords": [],
   "author": "",
