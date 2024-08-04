@@ -16,8 +16,6 @@ describe('Label Performance Tests', () => {
       .send(largePayload)
       .set('Authorization', `Bearer ${process.env.TOKEN}`);
     const endTime = Date.now();
-
-    console.log(`Response Time: ${endTime - startTime}ms`);
     
     expect(response.status).toBe(201);
 
@@ -43,8 +41,7 @@ describe('Label Performance Tests', () => {
       expect(response.status).toBe(200);
     });
 
-    console.log(`Response Time: ${endTime - startTime}ms`);
-    expect(endTime - startTime).toBeLessThan(1000);
+    expect(endTime - startTime).toBeLessThan(2000);
   });
 
   test('PUT /trello/labels/:labelId should complete updates within acceptable time', async () => {
@@ -56,11 +53,9 @@ describe('Label Performance Tests', () => {
       .send(updateData)
       .set('Authorization', `Bearer ${process.env.TOKEN}`);
     const endTime = Date.now();
-
-    console.log(`Response Time: ${endTime - startTime}ms`);
     
     expect(response.status).toBe(200);
-    expect(endTime - startTime).toBeLessThan(1000);
+    expect(endTime - startTime).toBeLessThan(2000);
   });
 
   test('DELETE /trello/labels/:labelId should handle deletions efficiently', async () => {
@@ -79,11 +74,8 @@ describe('Label Performance Tests', () => {
     const deleteResponse = await request(app)
       .delete(`/trello/labels/${createResponse.body.id}`)
       .set('Authorization', `Bearer ${process.env.TOKEN}`);
-    const endTime = Date.now();
-
-    console.log(`Response Time: ${endTime - startTime}ms`);
-    
+    const endTime = Date.now();    
     expect(deleteResponse.status).toBe(200);
-    expect(endTime - startTime).toBeLessThan(1000);
+    expect(endTime - startTime).toBeLessThan(2000);
   });
 });

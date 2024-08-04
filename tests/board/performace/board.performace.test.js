@@ -7,7 +7,6 @@ describe('Performance Tests', () => {
       jest.setTimeout(20000);
   
       const numBoards = 4;
-      const start = Date.now();
       const createdBoardIds = [];
   
       for (let i = 0; i < numBoards; i++) {
@@ -19,9 +18,6 @@ describe('Performance Tests', () => {
         expect(response.status).toBe(200);
         createdBoardIds.push(response.body.id);
       }
-  
-      const duration = Date.now() - start;
-      console.log(`Created ${numBoards} boards in ${duration}ms`);
   
       for (const boardId of createdBoardIds) {
         const deleteResponse = await request(app)
