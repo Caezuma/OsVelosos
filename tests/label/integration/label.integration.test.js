@@ -1,7 +1,7 @@
 require('../../../src/api/core/config/loadEnv');
 const request = require('supertest');
 const app = require('../../../src/app');
-const { labelSchema } = require('../../../src/api/schemas/labelSchema');
+const { labelSchema } = require('../../../src/api/schemas/labelschema');
 
 describe('Label Integration Tests', () => {
   let testLabelId;
@@ -50,7 +50,6 @@ describe('Label Integration Tests', () => {
     const { error } = labelSchema.validate(response.body);
     expect(error).toBeUndefined();
 
-    // Clean up after test
     await request(app)
       .delete(`/trello/labels/${response.body.id}`)
       .set('Authorization', `Bearer ${process.env.TOKEN}`);

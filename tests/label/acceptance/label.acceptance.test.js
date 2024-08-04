@@ -62,13 +62,13 @@ describe('Label Acceptance Tests', () => {
     const response = await request(app)
       .put(`/trello/labels/${testLabelId}`)
       .send({
-        name: 'Updated Acceptance Label',
+        name: 'Acceptance Test Label',
         color: 'red'
       })
       .set('Authorization', `Bearer ${process.env.TOKEN}`);
 
     expect(response.status).toBe(200);
-    expect(response.body.name).toBe('Updated Acceptance Label');
+    expect(response.body.name).toBe('Acceptance Test Label');
     expect(response.body.color).toBe('red');
   });
 
