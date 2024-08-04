@@ -1,6 +1,6 @@
 require('../../../src/api/core/config/loadEnv');
 const request = require('supertest');
-const { createListSchema, getListSchema } = require('../../../src/api/schemas/listSchema');
+const { createListSchema, getListSchema } = require('../../../src/api/schemas/listschema');
 const app = require('../../../src/app');
 
 const apiToken = process.env.TOKEN;

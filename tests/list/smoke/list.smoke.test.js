@@ -1,7 +1,7 @@
 require('../../../src/api/core/config/loadEnv');
 const request = require('supertest');
 const app = require('../../../src/app');
-const { createListSchema } = require('../../../src/api/schemas/listSchema');
+const { createListSchema } = require('../../../src/api/schemas/listschema');
 
 const apiToken = process.env.TOKEN;
 const boardId = process.env.BOARD_ID2;
