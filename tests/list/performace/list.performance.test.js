@@ -7,7 +7,7 @@ const testListId = process.env.LIST_ID;
 
 describe('List Performance Tests', () => {
   test('Create a large number of lists and measure response time', async () => {
-    const numberOfLists = 1;
+    const numberOfLists = 10;
     const createListPromises = [];
 
     for (let i = 0; i < numberOfLists; i++) {
