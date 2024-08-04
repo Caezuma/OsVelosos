@@ -41,44 +41,6 @@ Este projeto realiza a integração com a API do Trello, permitindo a criação,
     npm install
     ```
 
-## Passos Adicionais para Configuração
-
-Após instalar as dependências, será necessário criar um diretório `logs` e um arquivo `app.log` dentro desse diretório.
-
-### Usando no Windows
-
-1. Abra o terminal da sua IDE.
-2. Navegue até o diretório `src` do seu projeto:
-
-    ```cmd
-    cd src
-    ```
-
-3. Crie o diretório `logs` e o arquivo `app.log`:
-
-    ```cmd
-    mkdir logs
-    cd logs
-    type nul > app.log
-    ```
-
-### Usando Terminal no macOS/Linux
-
-1. Abra o terminal da sua IDE.
-2. Navegue até o diretório `src` do seu projeto:
-
-    ```bash
-    cd src
-    ```
-
-3. Crie o diretório `logs` e o arquivo `app.log`:
-
-    ```bash
-    mkdir logs
-    cd logs
-    touch app.log
-    ```
-
 ## Uso
 
 
