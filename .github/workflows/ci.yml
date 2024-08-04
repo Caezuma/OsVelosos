@@ -25,7 +25,7 @@ jobs:
       run: npm install
 
     - name: Run tests
-      run: npm test -- --maxWorkers=2
+      run: npm test -- --maxWorkers=1
 
     - name: Upload HTML test report
       if: success()
