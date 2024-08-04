@@ -1,9 +1,9 @@
 const RequestManager = require('../../core/RequestManager');
 
 class ChecklistService {
-  async createChecklist(name, boardId) {
+  async createChecklist(name, idCard) {
     return RequestManager.request('post', '/checklists', {
-      params: { name, boardId },
+      body: { name, idCard },
     });
   }
 

@@ -7,8 +7,8 @@ class CommentService {
     });
   }
 
-  async getComment(cardId, commentId) {
-    return RequestManager.request('get', `/cards/${cardId}/actions/${commentId}`, {
+  async getComment(commentId) {
+    return RequestManager.request('get', `/actions/${commentId}`, {
       params: { key: process.env.KEY, token: process.env.TOKEN },
     });
   }

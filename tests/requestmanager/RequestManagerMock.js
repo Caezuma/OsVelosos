@@ -43,4 +43,4 @@ class RequestManager {
   }
 }
 
-module.exports = new RequestManager();
+module.exports = RequestManager;

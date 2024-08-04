@@ -2,11 +2,11 @@ const ChecklistService = require('../business/services/checklistService');
 const logger = require('../core/logger');
 
 exports.createChecklist = async (req, res) => {
-  const { name, boardId } = req.body;
+  const { name, idCard } = req.body;
 
   try {
-    const data = await ChecklistService.createChecklist(name, boardId);
-    res.status(200).json(data);
+    const data = await ChecklistService.createChecklist(name, idCard);
+    res.status(201).json(data);
   } catch (error) {
     logger.error(`createChecklist: ${error.message}`);
     res.status(500).json({ error: error.message });

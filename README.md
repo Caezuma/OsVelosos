@@ -4,10 +4,21 @@ Este projeto realiza a integração com a API do Trello, permitindo a criação,
 
 ## Tecnologias Utilizadas
 
-- Node.js
-- Express
-- Axios
-- Dotenv
+### Dependências de Produção
+
+- **Node.js**: Ambiente de execução JavaScript.
+- **Express** (^4.19.2): Framework web rápido, flexível e minimalista para Node.js.
+- **Axios** (^1.7.2): Cliente HTTP baseado em Promises para o navegador e Node.js.
+- **Dotenv** (^16.4.5): Carrega variáveis de ambiente de um arquivo `.env` para `process.env`.
+- **Joi** (^17.13.3): Validação de dados com esquema para JavaScript.
+- **Supertest** (^7.0.0): Biblioteca para testar APIs HTTP.
+
+### Dependências de Desenvolvimento
+
+- **ESLint** (^9.8.0): Ferramenta de linting para identificar e relatar padrões encontrados no ECMAScript/JavaScript.
+- **Globals** (^15.8.0): Lista de variáveis globais reconhecidas por ESLint.
+- **Jest** (^29.7.0): Estrutura de testes de JavaScript divertida e fácil.
+- **jest-html-reporters** (^3.1.7): Relatórios HTML para testes Jest.
 
 ## Requisitos
 
@@ -69,25 +80,114 @@ Este projeto realiza a integração com a API do Trello, permitindo a criação,
 
 ## Estrutura de Pastas
 
--   `src/controllers/` - Contém os controladores para cada recurso (quadros, checklists, etiquetas, listas e comentários).
--   `src/routes/` - Define as rotas para a API.
--   `src/core/` - Contém arquivos de configuração e funções essenciais.
-    -   `config/` - Configurações e variáveis de ambiente (config.json, env.json).
-    -   `RequestManager.js` - Implementação do padrão Singleton para gerenciar requisições.
-    -   `logger.js` - Implementação do Logger para geração de logs.
-    -   `loadEnv.js` - Script para carregar variáveis de ambiente.
--   `src/business/services/` - Contém a lógica de negócios da aplicação.
-    -   `boardService.js`
-    -   `checklistService.js`
-    -   `commentService.js`
-    -   `labelService.js`
-    -   `listService.js`
--   `tests/` - Contém os arquivos de teste para os diferentes módulos.
-    -   `board.test.js`
-    -   `checklist.test.js`
-    -   `comment.test.js`
-    -   `label.test.js`
-    -   `list.test.js`
+### src/
+Diretório principal do código-fonte.
+
+#### api/
+Contém a lógica de negócios da aplicação.
+- `business/services/`
+  - `boardService.js`: Lógica de negócios para quadros.
+  - `checklistService.js`: Lógica de negócios para checklists.
+  - `commentService.js`: Lógica de negócios para comentários.
+  - `labelService.js`: Lógica de negócios para etiquetas.
+  - `listService.js`: Lógica de negócios para listas.
+
+#### controllers/
+Contém os controladores para cada recurso.
+- `boardController.js`: Controlador para quadros.
+- `checklistController.js`: Controlador para checklists.
+- `commentController.js`: Controlador para comentários.
+- `labelController.js`: Controlador para etiquetas.
+- `listController.js`: Controlador para listas.
+
+#### core/
+Contém arquivos de configuração e funções essenciais.
+- `config/`
+  - `config.json`: Arquivo de configuração.
+  - `env.json`: Variáveis de ambiente.
+- `loadEnv.js`: Script para carregar variáveis de ambiente.
+- `logger.js`: Implementação do Logger para geração de logs.
+- `RequestManager.js`: Implementação do padrão Singleton para gerenciar requisições.
+
+#### routes/
+Define as rotas para a API.
+- `trello.js`: Arquivo de rotas do Trello.
+
+#### schemas/
+Contém os esquemas de validação.
+- `boardschema.js`: Esquema de validação para quadros.
+- `checklistschema.js`: Esquema de validação para checklists.
+- `commentschema.js`: Esquema de validação para comentários.
+- `labelschema.js`: Esquema de validação para etiquetas.
+- `listschema.js`: Esquema de validação para listas.
+
+#### logs/
+Diretório para armazenamento de logs.
+- `app.log`: Arquivo de log da aplicação.
+
+#### tests/
+Contém os arquivos de teste para os diferentes módulos.
+- `board/`: Testes relacionados aos quadros.
+  - `acceptance/`: Testes de aceitação.
+    - `board.acceptance.test.js`
+  - `functional/`: Testes funcionais.
+    - `board.functional.test.js`
+  - `integration/`: Testes de integração.
+    - `board.integration.test.js`
+  - `performance/`: Testes de performance.
+    - `board.performance.test.js`
+  - `smoke/`: Testes de fumaça.
+    - `board.smoke.test.js`
+- `checklist/`: Testes relacionados aos checklists.
+  - `acceptance/`: Testes de aceitação.
+    - `checklist.acceptance.test.js`
+  - `functional/`: Testes funcionais.
+    - `checklist.functional.test.js`
+  - `integration/`: Testes de integração.
+    - `checklist.integration.test.js`
+  - `performance/`: Testes de performance.
+    - `checklist.performance.test.js`
+  - `smoke/`: Testes de fumaça.
+    - `checklist.smoke.test.js`
+- `comment/`: Testes relacionados aos comentários.
+  - `acceptance/`: Testes de aceitação.
+    - `comment.acceptance.test.js`
+  - `functional/`: Testes funcionais.
+    - `comment.functional.test.js`
+  - `integration/`: Testes de integração.
+    - `comment.integration.test.js`
+  - `performance/`: Testes de performance.
+    - `comment.performance.test.js`
+  - `smoke/`: Testes de fumaça.
+    - `comment.smoke.test.js`
+- `label/`: Testes relacionados as etiquetas.
+  - `acceptance/`: Testes de aceitação.
+    - `label.acceptance.test.js`
+  - `functional/`: Testes funcionais.
+    - `label.functional.test.js`
+  - `integration/`: Testes de integração.
+    - `label.integration.test.js`
+  - `performance/`: Testes de performance.
+    - `label.performance.test.js`
+  - `smoke/`: Testes de fumaça.
+    - `label.smoke.test.js`
+- `list/`: Testes relacionados as listas.
+  - `acceptance/`: Testes de aceitação.
+    - `list.acceptance.test.js`
+  - `functional/`: Testes funcionais.
+    - `list.functional.test.js`
+  - `integration/`: Testes de integração.
+    - `list.integration.test.js`
+  - `performance/`: Testes de performance.
+    - `list.performance.test.js`
+  - `smoke/`: Testes de fumaça.
+    - `list.smoke.test.js`
+- `requestmanager/`: Testes relacionados ao Request Manager.
+    - `unit/`: Testes unitários.
+        - `requestmanager.test.js`
+    - `RequestManagerMock.js`
+### Arquivo Principal
+- `app.js`: Arquivo principal da aplicação.
 
 ## Implementações Específicas
 
@@ -120,7 +220,7 @@ Os testes são implementados usando Jest e Supertest.
 Para executar os testes, use o seguinte comando:
 
 ```bash
-npm test
+npm test -- --maxWorkers=2
 ```
 
 ## Exemplos de Testes
