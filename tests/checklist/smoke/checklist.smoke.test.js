@@ -2,6 +2,10 @@ require('../../../src/api/core/config/loadEnv');
 const request = require('supertest');
 const app = require('../../../src/app');
 
+/**
+ * @group smoke
+ */
+
 describe('Checklist Smoke Tests', () => {
     const checklistId = process.env.CHECKLIST_ID;
   

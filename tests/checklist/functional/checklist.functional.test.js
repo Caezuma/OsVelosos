@@ -3,6 +3,10 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const { checklistNameSchema, boardSchema } = require('../../../src/api/schemas/checklistschema');
 
+/**
+ * @group functional
+ */
+
 describe('Checklist Functional Tests', () => {
     const checklistId = process.env.CHECKLIST_ID;
     const checklistId2 = process.env.CHECKLIST_ID2;
