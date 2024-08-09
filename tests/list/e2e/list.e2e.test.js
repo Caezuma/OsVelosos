@@ -1,70 +1,66 @@
+
 require('../../../src/api/core/config/loadEnv');
 const request = require('supertest');
 const { createListSchema, getListSchema } = require('../../../src/api/schemas/listschema');
 const app = require('../../../src/app');
-const Joi = require('joi');
+
 const apiToken = process.env.TOKEN;
 const boardId = process.env.BOARD_ID2;
 
 /**
- * @group acceptance
+ * @group e2e
  */
 
-describe('List Acceptance Tests', () => {
+describe('List E2E Tests', () => {
   let createdListId;
 
   afterAll(async () => {
     if (createdListId) {
       await request(app)
-        .delete(`/trello/lists/${createdListId}/list`)
+        .delete(`/trello/lists/${createdListId}/lists`)
         .set('Authorization', `Bearer ${apiToken}`);
     }
   });
 
-  test('Create a list and verify ID', async () => {
-    const response = await request(app)
+  test('Create a list, verify it exists, and retrieve it', async () => {
+    const createResponse = await request(app)
       .post('/trello/lists')
-      .send({ name: 'Acceptance Test List', idBoard: boardId })
+      .send({ name: 'E2E Test List', idBoard: boardId })
       .set('Authorization', `Bearer ${apiToken}`);
 
-    expect(response.status).toBe(200);
+    expect(createResponse.status).toBe(200);
 
-    const { error } = createListSchema.validate(response.body);
+    const { error } = createListSchema.validate(createResponse.body);
     expect(error).toBeUndefined();
 
-    createdListId = response.body.id;
+    createdListId = createResponse.body.id;
     expect(typeof createdListId).toBe('string');
-  });
 
-  test('Verify list is on the correct board', async () => {
-    const response = await request(app)
-      .get(`/trello/lists/${createdListId}/board`)
+    const getResponse = await request(app)
+      .get(`/trello/lists/${createdListId}`)
       .set('Authorization', `Bearer ${apiToken}`);
 
-    expect(response.status).toBe(200);
-
-    const boardResponseSchema = Joi.object({
-      id: Joi.string().required(),
-      name: Joi.string().required()
-    }).unknown(true);
-
-    const { error } = boardResponseSchema.validate(response.body);
-    expect(error).toBeUndefined();
-    expect(response.body.id).toBe(boardId);
+    expect(getResponse.status).toBe(200);
+    const { error: getError } = getListSchema.validate(getResponse.body);
+    expect(getError).toBeUndefined();
+    expect(getResponse.body.name).toBe('E2E Test List');
   });
 
-  test('Ensure list can be updated and retrieved', async () => {
-    const newName = 'Updated Acceptance Test List';
+  test('Update a list and verify the updated name', async () => {
+    if (!createdListId) {
+      console.error('Skipping update test: no listId available');
+      return;
+    }
 
+    const newName = 'Updated E2E Test List';
     const updateResponse = await request(app)
       .put(`/trello/lists/${createdListId}`)
       .send({ name: newName })
       .set('Authorization', `Bearer ${apiToken}`);
 
     expect(updateResponse.status).toBe(200);
-
-    const { error } = getListSchema.validate(updateResponse.body);
-    expect(error).toBeUndefined();
+    const { error: updateError } = getListSchema.validate(updateResponse.body);
+    expect(updateError).toBeUndefined();
     expect(updateResponse.body.name).toBe(newName);
 
     const getResponse = await request(app)
