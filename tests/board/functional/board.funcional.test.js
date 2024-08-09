@@ -3,6 +3,10 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const boardSchema = require('../../../src/api/schemas/boardschema');
 
+/**
+ * @group functional
+ */
+
 describe('Functional Tests', () => {
   test('GET /trello/boards/:boardId/actions should get actions of a board', async () => {
     const response = await request(app)

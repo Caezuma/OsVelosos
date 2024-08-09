@@ -2,6 +2,10 @@ require('../../../src/api/core/config/loadEnv');
 const request = require('supertest');
 const app = require('../../../src/app');
 
+/**
+ * @group performance
+ */
+
 describe('Performance Tests', () => {
     test('Performance: Create multiple boards', async () => {
       jest.setTimeout(20000);
@@ -28,4 +32,3 @@ describe('Performance Tests', () => {
       }
     }, 20000);
   });
-  

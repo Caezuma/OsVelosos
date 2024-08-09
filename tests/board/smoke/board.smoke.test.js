@@ -3,6 +3,10 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const boardSchema = require('../../../src/api/schemas/boardschema');
 
+/**
+ * @group smoke
+ */
+
 describe('Smoke Tests', () => {
     test('POST /trello/boards should create a board', async () => {
       const response = await request(app)

@@ -2,6 +2,10 @@ require('../../../src/api/core/config/loadEnv');
 const request = require('supertest');
 const app = require('../../../src/app');
 
+/**
+ * @group acceptance
+ */
+
 describe('Acceptance Tests', () => {
     test('POST /trello/boards should return 401 if authentication fails', async () => {
       const response = await request(app)
@@ -23,4 +27,4 @@ describe('Acceptance Tests', () => {
       expect(deleteResponse.body).toHaveProperty('error');
       expect(deleteResponse.body.error).toBe('Invalid or missing authentication token');
     });
-  });
+  }); 
