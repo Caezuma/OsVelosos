@@ -2,6 +2,7 @@ module.exports = {
   testEnvironment: "node",
   setupFilesAfterEnv: ["./jest.setup.js"],
   testMatch: ["**/tests/**/*.test.js"],
+  runner: "jest-runner-groups",
   reporters: [
     "default",
     [

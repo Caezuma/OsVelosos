@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,8 +24,23 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests
-      run: npm test -- --maxWorkers=2
+    - name: Run acceptance tests
+      run: npm test -- --group=acceptance
+
+    - name: Run e2e tests
+      run: npm test -- --group=e2e
+
+    - name: Run functional tests
+      run: npm test -- --group=functional
+
+    - name: Run integration tests
+      run: npm test -- --group=integration
+
+    - name: Run performance tests
+      run: npm test -- --group=performance
+
+    - name: Run smoke tests
+      run: npm test -- --group=smoke
 
     - name: Upload HTML test report
       if: success()

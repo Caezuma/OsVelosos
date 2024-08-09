@@ -3,6 +3,10 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const { checklistSchema } = require('../../../src/api/schemas/checklistschema');
 
+/**
+ * @group acceptance
+ */
+
 describe('Checklist Acceptance Tests', () => {
   let checklistId = null;
   const cardId = process.env.CARD_ID2;

@@ -3,6 +3,10 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const { checklistSchema, cardSchema } = require('../../../src/api/schemas/checklistschema');
 
+/**
+ * @group integration
+ */
+
 describe('Checklist Integration Tests', () => {
     const checklistId = process.env.CHECKLIST_ID;
     const checklistId2 = process.env.CHECKLIST_ID2;
