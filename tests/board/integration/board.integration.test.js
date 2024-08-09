@@ -3,6 +3,10 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const boardSchema = require('../../../src/api/schemas/boardschema');
 
+/**
+ * @group integration
+ */
+
 describe('Integration Tests', () => {
   let createdBoardId = null;
 
