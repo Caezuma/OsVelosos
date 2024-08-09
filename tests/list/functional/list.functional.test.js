@@ -6,6 +6,11 @@ const app = require('../../../src/app');
 const apiToken = process.env.TOKEN;
 const boardId = process.env.BOARD_ID2;
 
+
+/**
+ * @group functional
+ */
+
 describe('List Functional Tests', () => {
   let createdListId;
 

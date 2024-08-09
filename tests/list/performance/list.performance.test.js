@@ -5,6 +5,11 @@ const apiToken = process.env.TOKEN;
 const boardId = process.env.BOARD_ID2;
 const testListId = process.env.LIST_ID;
 
+
+/**
+ * @group performance
+ */
+
 describe('List Performance Tests', () => {
   test('Create a large number of lists and measure response time', async () => {
     const numberOfLists = 10;

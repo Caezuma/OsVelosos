@@ -6,6 +6,10 @@ const { createListSchema } = require('../../../src/api/schemas/listschema');
 const apiToken = process.env.TOKEN;
 const boardId = process.env.BOARD_ID2;
 
+/**
+ * @group smoke
+ */
+
 describe('List Smoke Tests', () => {
     let testListId;
 

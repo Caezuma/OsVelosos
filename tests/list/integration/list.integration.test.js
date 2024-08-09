@@ -7,6 +7,11 @@ const Joi = require('joi');
 const apiToken = process.env.TOKEN;
 const boardId = process.env.BOARD_ID2;
 
+
+/**
+ * @group integration
+ */
+
 describe('List Integration Tests', () => {
     let testListId;
   
