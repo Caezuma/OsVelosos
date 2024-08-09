@@ -3,6 +3,10 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const { labelSchema } = require('../../../src/api/schemas/labelschema');
 
+/**
+ * @group smoke
+ */
+
 describe('Label Smoke Tests', () => {
   test('GET /trello/labels/:labelId should retrieve a label and return status 200', async () => {
     const labelId = process.env.LABEL_ID;

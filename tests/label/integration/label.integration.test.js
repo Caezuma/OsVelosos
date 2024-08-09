@@ -3,6 +3,10 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const { labelSchema } = require('../../../src/api/schemas/labelschema');
 
+/**
+ * @group integration
+ */
+
 describe('Label Integration Tests', () => {
   let testLabelId;
 
