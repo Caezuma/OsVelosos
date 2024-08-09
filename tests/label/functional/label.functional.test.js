@@ -3,6 +3,10 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const { labelSchema } = require('../../../src/api/schemas/labelschema');
 
+/**
+ * @group functional
+ */
+
 describe('Label Functional Tests', () => {
   let testLabelId;
 

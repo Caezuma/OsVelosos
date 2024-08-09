@@ -2,6 +2,10 @@ require('../../../src/api/core/config/loadEnv');
 const request = require('supertest');
 const app = require('../../../src/app');
 
+/**
+ * @group performance
+ */
+
 describe('Label Performance Tests', () => {
   test('POST /trello/labels should handle large payloads efficiently', async () => {
     const largePayload = {
