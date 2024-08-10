@@ -3,6 +3,10 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const { createCommentSchema } = require('../../../src/api/schemas/commentschema');
 
+  /**
+   * @group functional
+   */
+
 describe('Comment Functional Tests', () => {
   const cardId = process.env.CARD_ID;
   let commentId;

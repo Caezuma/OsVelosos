@@ -2,6 +2,10 @@ require('../../../src/api/core/config/loadEnv');
 const request = require('supertest');
 const app = require('../../../src/app');
 
+  /**
+   * @group performance
+   */
+
 describe('Comment Performance Tests', () => {
   const cardId = process.env.CARD_ID;
   const longText = 'A'.repeat(100); 

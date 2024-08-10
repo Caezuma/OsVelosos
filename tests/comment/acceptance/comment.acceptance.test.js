@@ -3,6 +3,11 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const { createCommentSchema, deleteCommentSchema, getCommentSchema } = require('../../../src/api/schemas/commentschema');
 
+
+  /**
+   * @group acceptance
+   */
+
 describe('Comment Acceptance Tests', () => {
   const cardId = process.env.CARD_ID;
   const initialText = 'Acceptance Test Comment';
