@@ -3,6 +3,10 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const CommentService = require('../../../src/api/business/services/commentService');
 
+  /**
+   * @group integration
+   */
+
 describe('Comment Integration Tests', () => {
   const cardId = process.env.CARD_ID;
   const validCommentText = 'This is a valid comment';

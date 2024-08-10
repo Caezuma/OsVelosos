@@ -3,6 +3,11 @@ const request = require('supertest');
 const app = require('../../../src/app');
 const { createCommentSchema } = require('../../../src/api/schemas/commentschema');
 
+
+  /**
+   * @group smoke
+   */
+
 describe('Comment Smoke Tests', () => {
   const cardId = process.env.CARD_ID;
   let commentId;
