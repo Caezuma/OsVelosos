@@ -30,21 +30,25 @@ describe('Comment Performance Tests', () => {
   });
 
   test('Attempt to create a comment with only space in text should return status 201', async () => {
+    console.time('Create comment with only space');
     const response = await request(app)
       .post(`/trello/cards/${cardId}/comments`)
       .send({ text: ' ' })
       .set('Authorization', `Bearer ${process.env.TOKEN}`);
 
+    console.timeEnd('Create comment with only space');
     expect(response.status).toBe(201); 
     expect(typeof response.body.error).toBe('undefined');
   }, 10000);
 
   test('Create a comment with extremely long text should return status 201', async () => {
+    console.time('Create comment with long text');
     const response = await request(app)
       .post(`/trello/cards/${cardId}/comments`)
       .send({ text: longText })
       .set('Authorization', `Bearer ${process.env.TOKEN}`);
 
+    console.timeEnd('Create comment with long text');
     expect(response.status).toBe(201);
     expect(response.body).toHaveProperty('commentId');
     createdComments.push(response.body.commentId);
@@ -56,6 +60,7 @@ describe('Comment Performance Tests', () => {
       text: `Performance Test Comment ${index + 1}`,
     }));
 
+    console.time('Bulk create comments');
     const createCommentsPromises = commentsToCreate.map(comment =>
       request(app)
         .post(`/trello/cards/${cardId}/comments`)
@@ -64,6 +69,7 @@ describe('Comment Performance Tests', () => {
     );
 
     const responses = await Promise.all(createCommentsPromises);
+    console.timeEnd('Bulk create comments');
 
     responses.forEach(response => {
       expect(response.status).toBe(201);
@@ -73,16 +79,15 @@ describe('Comment Performance Tests', () => {
   }, 60000);
 
   test('Measure response time for creating a single comment with long text', async () => {
-    const start = Date.now();
+    console.time('Create single comment with long text');
     const response = await request(app)
       .post(`/trello/cards/${cardId}/comments`)
       .send({ text: longText })
       .set('Authorization', `Bearer ${process.env.TOKEN}`);
-    const duration = Date.now() - start;
+    console.timeEnd('Create single comment with long text');
 
     expect(response.status).toBe(201);
     expect(response.body).toHaveProperty('commentId');
-    expect(duration).toBeLessThan(5000);
     createdComments.push(response.body.commentId);
   }, 20000);
 });

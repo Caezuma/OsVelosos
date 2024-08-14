@@ -11,9 +11,13 @@ describe('Checklist Performance Tests', () => {
       const checklistId = process.env.CHECKLIST_ID;
       const numItems = 5;
   
+      console.time('Time to retrieve checkItems');
+
       for (let i = 0; i < numItems; i++) {
         await request(app).get(`/trello/checklists/${checklistId}/checkItems`);
       }
+
+      console.timeEnd('Time to retrieve checkItems');
   
     });
   });
